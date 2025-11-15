@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ " /assets/css/main.css" | relative_url }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Pogrebni Prevozi Edit Aljić S.P.",
+      "description": "Profesionalni međunarodni prevoz pokojnika iz EU u Balkan",
+      "telephone": "+386 70 443 005",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "url": "https://pogrebni-prevozi-aljic.eu",
+      "sameAs": ["https://facebook.com/storitve.aljic"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SI"
+      },
+      "areaServed": ["Bosna i Hercegovina", "Njemačka", "Austrija", "Slovenija", "Hrvatska", "Srbija", "Crna Gora"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pogrebni Prevozi",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Međunarodni prevoz pokojnika"
+          }
+        }]
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    {% include header.html %}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

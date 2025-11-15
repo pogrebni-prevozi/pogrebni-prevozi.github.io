@@ -1,0 +1,11 @@
+title: Pogrebni Prevozi Edit Aljić
+email: kontakt@pogrebni-prevozi-aljic.eu
+description: >-
+  Profesionalni međunarodni prevoz pokojnika i repatrijacija iz EU (Nemačka, Austrija, Švajcarska) u BiH, Srbiju i Crnu Goru. Dostupni 24/7.
+baseurl: "" 
+url: "https://pogrebni-prevozi.github.io" 
+github_username: pogrebni-prevozi  
+remote_theme: pages-themes/minimal  
+markdown: kramdown
+plugins:
+  - jekyll-feed
