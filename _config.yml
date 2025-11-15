@@ -1,11 +1,80 @@
-title: Pogrebni Prevozi Edit Aljić
-email: kontakt@pogrebni-prevozi-aljic.eu
-description: >-
-  Profesionalni međunarodni prevoz pokojnika i repatrijacija iz EU (Nemačka, Austrija, Švajcarska) u BiH, Srbiju i Crnu Goru. Dostupni 24/7.
-baseurl: "" 
-url: "https://pogrebni-prevozi.github.io" 
-github_username: pogrebni-prevozi  
-remote_theme: pages-themes/minimal  
+# Site Settings
+title: "Pogrebni Prevozi Edit Aljić"
+description: "Profesionalni međunarodni prevoz pokojnika iz EU u BiH, Srbiju i Crnu Goru. Dostupni 24/7."
+url: "https://pogrebni-prevozi.github.io"
+baseurl: ""
+
+# Contact Info
+phone: "+386 70 443 005"
+phone_display: "+386 70 443 005"
+website: "https://pogrebne-storitve-aljic.eu"
+facebook: "https://facebook.com/storitve.aljic"
+whatsapp: "38670443005"
+viber: "38670443005"
+
+# Company Info
+company_name: "Pogrebni Prevozi Edit Aljić S.P."
+company_description: "Profesionalni međunarodni prevoz pokojnika sa 15+ godina iskustva"
+established_year: "2008"
+
+# SEO
+lang: "bs"
+locale: "bs_BA"
+author: "Pogrebni Prevozi Edit Aljić"
+
+# Jekyll Settings
 markdown: kramdown
+permalink: pretty
+timezone: Europe/Sarajevo
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+
+# Include
+include:
+  - _pages
+
+# Collections
+collections:
+  relacije:
+    output: true
+    permalink: /relacije/:path/
+
+# Defaults
+defaults:
+  # Pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  
+  # Relacije
+  - scope:
+      path: ""
+      type: "relacije"
+    values:
+      layout: "relacija"
+      author: "Edit Aljić"
+
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO Tag Settings
+social:
+  name: Pogrebni Prevozi Edit Aljić
+  links:
+    - https://facebook.com/storitve.aljic
+    - https://pogrebne-storitve-aljic.eu
+
+# Google Analytics (dodaj kasnije ako treba)
+# google_analytics: UA-XXXXXXXXX-X

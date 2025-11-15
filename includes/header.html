@@ -1,22 +1,30 @@
 <div class="top-bar">
     <div class="top-bar-content">
-        <div>Dostupni 24/7 | <a href="tel:+38670443005">📞 +386 70 443 005</a></div>
+        <div>Dostupni 24/7 | <a href="tel:{{ site.phone }}">📞 {{ site.phone_display }}</a></div>
         <div>
-            <a href="{{ site.url | append: site.baseurl }}" target="_blank">{{ site.url | remove_https }}</a> |
-            <a href="https://facebook.com/storitve.aljic" target="_blank">Facebook</a>
+            <a href="{{ site.website }}" target="_blank" rel="noopener">pogrebne-storitve-aljic.eu</a>
         </div>
     </div>
 </div>
 
 <header>
     <div class="header-content">
-        <div class="logo">Pogrebni Prevozi Edit Aljić</div>
-        <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+        <a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
+        <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
         <nav id="mainNav">
-            <a href="{{ " /" | relative_url }}" class="active">Početna</a>
-            <a href="{{ " /#destinations" | relative_url }}">Relacije</a>
-            <a href="{{ " /#process" | relative_url }}">Procedura</a>
-            <a href="{{ " /kontakt.html" | relative_url }}">Kontakt</a>
+            <a href="{{ site.baseurl }}/" {% if page.url=="/" %}class="active" {% endif %}>Početna</a>
+            <a href="{{ site.baseurl }}/relacije/" {% if page.url contains "/relacije" %}class="active" {% endif
+                %}>Relacije</a>
+            <a href="{{ site.baseurl }}/procedura/" {% if page.url=="/procedura/" %}class="active" {% endif
+                %}>Procedura</a>
+            <a href="{{ site.baseurl }}/kontakt/" {% if page.url=="/kontakt/" %}class="active" {% endif %}>Kontakt</a>
         </nav>
     </div>
 </header>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('mainNav');
+        nav.classList.toggle('active');
+    }
+</script>
