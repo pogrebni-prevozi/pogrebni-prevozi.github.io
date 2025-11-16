@@ -1,0 +1,39 @@
+---
+layout: default
+title: "Stranica Nije Pronađena"
+permalink: /404.html
+---
+
+<main class="container" style="padding: 6rem 2rem; text-align: center;">
+    <div style="max-width: 600px; margin: 0 auto;">
+        <h1 style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;">404</h1>
+        <h2 style="font-size: 1.8rem; color: var(--accent); margin-bottom: 2rem; font-weight: 400;">
+            Stranica Nije Pronađena
+        </h2>
+
+        <p style="font-size: 1.1rem; color: var(--text); margin-bottom: 3rem; line-height: 1.7;">
+            Tražena stranica ne postoji ili je uklonjena.<br>
+            Molimo vas da provjerite URL adresu ili se vratite na početnu stranicu.
+        </p>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+            <a href="{{ site.baseurl }}/" class="cta-btn"
+                style="background: var(--primary); color: var(--white); border-color: var(--primary);">
+                Početna Stranica
+            </a>
+            <a href="{{ site.baseurl }}/relacije/" class="cta-btn"
+                style="background: var(--gold); color: var(--white); border-color: var(--gold);">
+                Sve Relacije
+            </a>
+        </div>
+
+        <div style="background: var(--light); padding: 2rem; border-left: 4px solid var(--gold);">
+            <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">Potrebna vam je pomoć?</h3>
+            <p style="margin-bottom: 1rem;">Kontaktirajte nas direktno:</p>
+            <a href="tel:{{ site.phone }}"
+                style="color: var(--gold); text-decoration: none; font-size: 1.2rem; font-weight: 600;">
+                📞 {{ site.phone_display }}
+            </a>
+        </div>
+    </div>
+</main>
