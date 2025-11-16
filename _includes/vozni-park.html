@@ -1,6 +1,15 @@
 <section id="vozni-park-sekcija" style="background: var(--white); padding: 4rem 0;">
     <style>
-        /* Osnovni stilovi za kartice */
+        /* Media Query za responsive prikaz 1 card po redu */
+        @media (max-width: 768px) {
+            .vehicle-slide {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+            .vehicle-card img {
+                height: 300px !important;
+            }
+        }
+
         .vehicle-slide {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -20,35 +29,6 @@
             height: 250px;
             object-fit: cover;
             display: block;
-        }
-
-        /* MEDIA QUERY: Na ekranima do 768px */
-        @media (max-width: 768px) {
-            .vehicle-slide {
-                display: flex;
-                flex-direction: column;
-                grid-template-columns: none; /* Ukloni grid logiku */
-                gap: 0;
-            }
-
-            .vehicle-card {
-                flex: 0 0 100%; /* Kartica zauzima punu širinu */
-                margin-bottom: 2rem; 
-            }
-
-            #vehicle-list {
-                display: flex;
-                flex-wrap: wrap; /* Da bi kartice mogle da se slažu unutar slajda */
-            }
-
-     
-            .vehicle-slide {
-                grid-template-columns: repeat(1, 1fr) !important;
-                gap: 1rem !important;
-            }
-            .vehicle-card img {
-                height: 300px !important;
-            }
         }
     </style>
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
@@ -169,40 +149,17 @@
     const slides = document.querySelectorAll('.vehicle-slide');
     const totalSlides = slides.length;
     const vehicleList = document.getElementById('vehicle-list');
-    
+
     function moveSlide(direction) {
-        const isMobile = window.innerWidth <= 768;
-        
-        if (!isMobile) {
-            currentSlide += direction;
+        currentSlide += direction;
 
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-
-            const offset = -currentSlide * 100;
-            vehicleList.style.transform = `translateX(${offset}%)`;
-
-        } else {
-        
-            
-            currentSlide += direction; // Zadržavamo originalnu logiku
-            
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-            
-            const offset = -currentSlide * 100;
-            vehicleList.style.transform = `translateX(${offset}%)`;
+        if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (currentSlide >= totalSlides) {
+            currentSlide = 0;
         }
+
+        const offset = -currentSlide * 100;
+        vehicleList.style.transform = `translateX(${offset}%)`;
     }
-    
-    window.addEventListener('resize', () => {
-        currentSlide = 0;
-        vehicleList.style.transform = `translateX(0%)`;
-    });
 </script>
