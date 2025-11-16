@@ -22,16 +22,16 @@ permalink: /kontakt/
             za sve informacije i hitne slučajeve
         </p>
 
-        <div class="contact-box" style="margin-bottom: 4rem;">
-            <h3 style="font-size: 2rem; margin-bottom: 2rem;">Pozovite nas odmah</h3>
-            <div class="contact-info" style="flex-direction: column; align-items: center;">
-                <a href="tel:{{ site.phone }}" style="font-size: 1.3rem; padding: 1.2rem 2.5rem;">
+        <div class="contact-box" style="margin-bottom: 4rem; text-align: center;">
+            <h3 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary);">Pozovite nas odmah</h3>
+            <div class="contact-info" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                <a href="tel:{{ site.phone }}" style="font-size: 1.3rem; padding: 1.2rem 2.5rem; background: var(--primary); color: var(--white); text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
                     📞 {{ site.phone_display }}
                 </a>
-                <a href="https://wa.me/{{ site.whatsapp }}" style="font-size: 1.2rem; padding: 1rem 2rem;">
+                <a href="https://wa.me/{{ site.whatsapp }}" style="font-size: 1.2rem; padding: 1rem 2rem; background: #25D366; color: var(--white); text-decoration: none; border-radius: 5px; display: inline-block;">
                     💬 WhatsApp
                 </a>
-                <a href="viber://chat?number={{ site.viber }}" style="font-size: 1.2rem; padding: 1rem 2rem;">
+                <a href="viber://chat?number={{ site.viber }}" style="font-size: 1.2rem; padding: 1rem 2rem; background: #665CAC; color: var(--white); text-decoration: none; border-radius: 5px; display: inline-block;">
                     Viber
                 </a>
             </div>
@@ -39,7 +39,39 @@ permalink: /kontakt/
 
         <section style="margin-bottom: 4rem;">
             <h2 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--primary); text-align: center;">
-                Osnovne informacije
+                Pošaljite Nam Poruku
+            </h2>
+            
+            <form action="https://formspree.io/f/xdkywbdl" method="POST" style="background: var(--light); padding: 2rem; border: 1px solid var(--border); border-radius: 5px;">
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; font-weight: bold; color: var(--primary); margin-bottom: 0.5rem;">Vaša email adresa:</label>
+                    <input type="email" name="email" id="email" required 
+                        style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 4px; box-sizing: border-box; font-size: 1rem; background: var(--white);">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display: block; font-weight: bold; color: var(--primary); margin-bottom: 0.5rem;">Vaša poruka:</label>
+                    <textarea name="message" id="message" required rows="6"
+                        style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 4px; box-sizing: border-box; font-size: 1rem; background: var(--white); resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" 
+                    style="display: block; width: 100%; padding: 1rem; background: var(--gold); color: var(--white); border: none; border-radius: 5px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s;"
+                    onmouseover="this.style.background='darken(var(--gold), 10%)'" 
+                    onmouseout="this.style.background='var(--gold)'">
+                    Pošalji Poruku
+                </button>
+            </form>
+            
+            <p style="text-align: center; color: var(--accent); font-size: 0.9rem; margin-top: 1rem;">
+                Odgovaramo u najkraćem mogućem roku. Za hitne slučajeve koristite telefon.
+            </p>
+        </section>
+        
+        <section style="margin-bottom: 4rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--primary); text-align: center;">
+                Osnovne Informacije
             </h2>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
@@ -128,7 +160,7 @@ permalink: /kontakt/
 
         <section style="margin-bottom: 4rem;">
             <h2 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--primary); text-align: center;">
-                Radno Vrijeme
+                Radno vrijeme
             </h2>
             
             <div style="background: var(--gold); color: var(--white); padding: 2rem; text-align: center;">
@@ -142,17 +174,17 @@ permalink: /kontakt/
 
         <section>
             <h2 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--primary); text-align: center;">
-                Zašto Izabrati Nas?
+                Zašto izabrati nas?
             </h2>
             
             <div style="display: grid; gap: 1.5rem;">
                 <div style="background: var(--light); padding: 1.5rem; border-left: 4px solid var(--gold);">
-                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">✓ 15+ Godina Iskustva</h3>
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">✓ 15+ Godina iskustva</h3>
                     <p>Dugogodišnje iskustvo u međunarodnom prevozu pokojnika</p>
                 </div>
 
                 <div style="background: var(--light); padding: 1.5rem; border-left: 4px solid var(--gold);">
-                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">✓ Kompletna Dokumentacija</h3>
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">✓ Kompletna dokumentacija</h3>
                     <p>Brinemo se o svim potrebnim dokumentima i dozvolama</p>
                 </div>
 
@@ -173,13 +205,13 @@ permalink: /kontakt/
             </div>
         </section>
 
-        <div class="contact-box" style="margin-top: 4rem;">
-            <h3>Kontaktirajte nas odmah</h3>
-            <p>Za sve informacije, pitanja ili hitne slučajeve</p>
-            <div class="contact-info">
-                <a href="tel:{{ site.phone }}">📞 {{ site.phone_display }}</a>
-                <a href="https://wa.me/{{ site.whatsapp }}">💬 WhatsApp</a>
-                <a href="viber://chat?number={{ site.viber }}">Viber</a>
+        <div class="contact-box" style="margin-top: 4rem; text-align: center;">
+            <h3 style="font-size: 1.8rem; color: var(--primary);">Kontaktirajte nas odmah</h3>
+            <p style="color: var(--accent); margin-bottom: 1.5rem;">Za sve informacije, pitanja ili hitne slučajeve</p>
+            <div class="contact-info" style="display: flex; justify-content: center; gap: 1rem;">
+                <a href="tel:{{ site.phone }}" style="background: var(--light); border: 1px solid var(--border); padding: 0.8rem 1.2rem; text-decoration: none; color: var(--primary); border-radius: 5px;">📞 {{ site.phone_display }}</a>
+                <a href="https://wa.me/{{ site.whatsapp }}" style="background: var(--light); border: 1px solid var(--border); padding: 0.8rem 1.2rem; text-decoration: none; color: var(--primary); border-radius: 5px;">💬 WhatsApp</a>
+                <a href="viber://chat?number={{ site.viber }}" style="background: var(--light); border: 1px solid var(--border); padding: 0.8rem 1.2rem; text-decoration: none; color: var(--primary); border-radius: 5px;">Viber</a>
             </div>
         </div>
     </div>
