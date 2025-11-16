@@ -1,0 +1,82 @@
+<!-- Social Proof Section -->
+<section style="background: var(--light); padding: 4rem 0; margin-top: 4rem;">
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem; color: var(--primary);">
+            Naši Uspješno Realizovani Prevozi
+        </h2>
+        <p style="text-align: center; color: var(--accent); margin-bottom: 3rem; font-size: 1.1rem;">
+            Pogledajte naše nedavne prevoze širom Balkana
+        </p>
+
+        <!-- Facebook Page Plugin -->
+        <div style="max-width: 500px; margin: 0 auto; background: var(--white); padding: 2rem; border: 1px solid var(--border);">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" 
+                src="https://connect.facebook.net/bs_BA/sdk.js#xfbml=1&version=v18.0" 
+                nonce="random123">
+            </script>
+            
+            <!-- Facebook Page Feed -->
+            <div class="fb-page" 
+                data-href="https://facebook.com/storitve.aljic" 
+                data-tabs="timeline" 
+                data-width="450" 
+                data-height="500" 
+                data-small-header="false" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false" 
+                data-show-facepile="false">
+                <blockquote cite="https://facebook.com/storitve.aljic" class="fb-xfbml-parse-ignore">
+                    <a href="https://facebook.com/storitve.aljic">Pogrebni prevozi Edit Aljić</a>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- Alternativa: Statičke Slike (ako FB ne radi) -->
+        <div id="static-gallery" style="display: none; margin-top: 3rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <!-- Dodaj kasnije -->
+                <div style="background: var(--white); padding: 1.5rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="width: 100%; height: 200px; background: var(--light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        📍
+                    </div>
+                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Gostivar, Makedonija</h4>
+                    <p style="font-size: 0.9rem; color: var(--accent);">Uspješno realizovan prevoz</p>
+                </div>
+                
+                <div style="background: var(--white); padding: 1.5rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="width: 100%; height: 200px; background: var(--light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        📍
+                    </div>
+                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Žitorađa, Srbija</h4>
+                    <p style="font-size: 0.9rem; color: var(--accent);">Uspješno realizovan prevoz</p>
+                </div>
+                
+                <div style="background: var(--white); padding: 1.5rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="width: 100%; height: 200px; background: var(--light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        📍
+                    </div>
+                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Peć, Kosovo</h4>
+                    <p style="font-size: 0.9rem; color: var(--accent);">Uspješno realizovan prevoz</p>
+                </div>
+                
+                <div style="background: var(--white); padding: 1.5rem; border: 1px solid var(--border); text-align: center;">
+                    <div style="width: 100%; height: 200px; background: var(--light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        📍
+                    </div>
+                    <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Kulaši, Prnjavor - BiH</h4>
+                    <p style="font-size: 0.9rem; color: var(--accent);">Uspješno realizovan prevoz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Responsive za FB plugin */
+@media (max-width: 768px) {
+    .fb-page {
+        width: 100% !important;
+    }
+}
+</style>
