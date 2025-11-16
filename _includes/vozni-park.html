@@ -1,4 +1,37 @@
 <section id="vozni-park-sekcija" style="background: var(--white); padding: 4rem 0;">
+    <style>
+        /* Media Query za responsive prikaz 1 card po redu */
+        @media (max-width: 768px) {
+            .vehicle-slide {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+            .vehicle-card img {
+                height: 300px !important;
+            }
+        }
+
+        /* Osnovni stilovi za kartice radi lakšeg upravljanja (prebaceni iz inline stila) */
+        .vehicle-slide {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            flex: 0 0 100%;
+        }
+
+        .vehicle-card {
+            background: var(--light);
+            border: 2px solid var(--border);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .vehicle-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
         <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem; color: var(--primary);">
             Naš vozni park
@@ -10,32 +43,32 @@
         <div id="vehicle-carousel-container" style="position: relative; overflow: hidden;">
             <div id="vehicle-list" style="display: flex; transition: transform 0.5s ease-in-out;">
                 
-                <div class="vehicle-slide" style="flex: 0 0 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="vehicle-slide">
                     
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v1.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v1.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Specijalno prilagođeno za prevoz preminulih.</p>
                         </div>
                     </div>
                     
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v2.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v2.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Pouzdanost na svakom putovanju.</p>
                         </div>
                     </div>
                     
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v3.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v3.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Garancija sigurnog i dostojanstvenog transporta.</p>
@@ -43,29 +76,29 @@
                     </div>
                 </div>
 
-                <div class="vehicle-slide" style="flex: 0 0 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                <div class="vehicle-slide">
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v4.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v4.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Specijalno prilagođeno za prevoz preminulih.</p>
                         </div>
                     </div>
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v5.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v5.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Pouzdanost i diskrecija na svakom putovanju.</p>
                         </div>
                     </div>
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v6.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v6.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Garancija sigurnog i dostojanstvenog transporta.</p>
@@ -73,29 +106,29 @@
                     </div>
                 </div>
                 
-                <div class="vehicle-slide" style="flex: 0 0 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                <div class="vehicle-slide">
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v7.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v7.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Specijalno prilagođeno za prevoz preminulih.</p>
                         </div>
                     </div>
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v8.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v8.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Pouzdanost i diskrecija na svakom putovanju.</p>
                         </div>
                     </div>
-                    <div class="vehicle-card" style="background: var(--light); border: 2px solid var(--border); overflow: hidden; transition: all 0.3s;"
+                    <div class="vehicle-card"
                         onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                        <img src="{{ site.baseurl }}/assets/vozila/v9.jpg" alt="Vozilo za prevoz" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <img src="{{ site.baseurl }}/assets/vozila/v9.jpg" alt="Vozilo za prevoz">
                         <div style="padding: 1.5rem;">
                             <h3 style="color: var(--primary); margin-bottom: 0.7rem; font-size: 1.3rem;"></h3>
                             <p style="color: var(--text); font-size: 0.95rem;">Garancija sigurnog i dostojanstvenog transporta.</p>
