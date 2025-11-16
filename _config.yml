@@ -1,26 +1,29 @@
 # Site Settings
-title: "Pogrebni Prevozi Edit Aljić"
-description: "Profesionalni međunarodni prevoz pokojnika iz EU u BiH, Srbiju i Crnu Goru. Dostupni 24/7."
-url: "https://pogrebni-prevozi.github.io"
+title: Pogrebni prevozi Edit Aljić
+description: Profesionalni međunarodni prevoz pokojnika iz EU u BiH, Srbiju i Crnu Goru. Dostupni 24/7.
+url: https://pogrebni-prevozi.github.io
 baseurl: ""
 
 # Contact Info
 phone: "+386 70 443 005"
 phone_display: "+386 70 443 005"
-website: "https://pogrebne-storitve-aljic.eu"
-facebook: "https://facebook.com/storitve.aljic"
+website: https://pogrebne-storitve-aljic.eu
+facebook: https://facebook.com/storitve.aljic
 whatsapp: "38670443005"
 viber: "38670443005"
 
 # Company Info
-company_name: "Pogrebni Prevozi Edit Aljić S.P."
-company_description: "Profesionalni međunarodni prevoz pokojnika sa 15+ godina iskustva"
-established_year: "2008"
+company_name: Pogrebni prevozi Edit Aljić S.P.
+company_description: Profesionalni međunarodni prevoz pokojnika sa 15+ godina iskustva
+established_year: 2008
 
 # SEO
-lang: "bs"
-locale: "bs_BA"
-author: "Pogrebni Prevozi Edit Aljić"
+lang: bs
+locale: bs_BA
+author: Pogrebni prevozi Edit Aljić
+
+# Google Analytics
+google_analytics: G-7WMZFXTWKP
 
 # Jekyll Settings
 markdown: kramdown
@@ -36,6 +39,7 @@ exclude:
   - vendor
   - .git
   - .gitignore
+  - generate_routes.py
 
 # Include
 include:
@@ -52,17 +56,17 @@ defaults:
   # Pages
   - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "default"
+      layout: default
   
   # Relacije
   - scope:
       path: ""
-      type: "relacije"
+      type: relacije
     values:
-      layout: "relacija"
-      author: "Edit Aljić"
+      layout: relacija
+      author: Edit Aljić
 
 # Plugins
 plugins:
@@ -71,9 +75,7 @@ plugins:
 
 # SEO Tag Settings
 social:
-  name: Pogrebni Prevozi Edit Aljić
+  name: Pogrebni prevozi Edit Aljić
   links:
     - https://facebook.com/storitve.aljic
     - https://pogrebne-storitve-aljic.eu
-
- google_analytics: G-7WMZFXTWKP
