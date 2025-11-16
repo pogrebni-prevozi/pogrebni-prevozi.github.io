@@ -462,9 +462,19 @@ footer {
     box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 
-/* Mobile Icon Nav */
+/* Mobile Text Nav */
 .mobile-nav-icons {
     display: none;
+}
+
+.mobile-nav-icons a {
+    color: var(--text);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
 /* Responsive */
@@ -478,18 +488,19 @@ footer {
         display: none !important;
     }
     
-    /* Show icon navigation on mobile */
+    /* Show text navigation on mobile */
     .mobile-nav-icons {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
         align-items: center;
     }
     
     .mobile-nav-icons a {
         color: var(--primary);
-        font-size: 1.5rem;
+        font-size: 0.75rem;
         text-decoration: none;
         transition: color 0.3s;
+        font-weight: 600;
     }
     
     .mobile-nav-icons a:hover {
