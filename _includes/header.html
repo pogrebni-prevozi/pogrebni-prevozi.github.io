@@ -1,0 +1,30 @@
+<div class="top-bar">
+    <div class="top-bar-content">
+        <div>Dostupni 24/7 | <a href="tel:{{ site.phone }}">📞 {{ site.phone_display }}</a></div>
+        <div>
+            <a href="{{ site.website }}" target="_blank" rel="noopener">pogrebne-storitve-aljic.eu</a>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="header-content">
+        <a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
+        <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+        <nav id="mainNav">
+            <a href="{{ site.baseurl }}/" {% if page.url=="/" %}class="active" {% endif %}>Početna</a>
+            <a href="{{ site.baseurl }}/relacije/" {% if page.url contains "/relacije" %}class="active" {% endif
+                %}>Relacije</a>
+            <a href="{{ site.baseurl }}/procedura/" {% if page.url=="/procedura/" %}class="active" {% endif
+                %}>Procedura</a>
+            <a href="{{ site.baseurl }}/kontakt/" {% if page.url=="/kontakt/" %}class="active" {% endif %}>Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('mainNav');
+        nav.classList.toggle('active');
+    }
+</script>
