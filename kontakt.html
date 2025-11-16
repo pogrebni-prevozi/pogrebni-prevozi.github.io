@@ -205,15 +205,8 @@ permalink: /kontakt/
             </div>
         </section>
 
-        <div class="contact-box" style="margin-top: 4rem; text-align: center;">
-            <h3 style="font-size: 1.8rem; color: var(--primary);">Kontaktirajte nas odmah</h3>
-            <p style="color: var(--accent); margin-bottom: 1.5rem;">Za sve informacije, pitanja ili hitne slučajeve</p>
-            <div class="contact-info" style="display: flex; justify-content: center; gap: 1rem;">
-                <a href="tel:{{ site.phone }}" style="background: var(--light); border: 1px solid var(--border); padding: 0.8rem 1.2rem; text-decoration: none; color: var(--primary); border-radius: 5px;">📞 {{ site.phone_display }}</a>
-                <a href="https://wa.me/{{ site.whatsapp }}" style="background: var(--light); border: 1px solid var(--border); padding: 0.8rem 1.2rem; text-decoration: none; color: var(--primary); border-radius: 5px;">💬 WhatsApp</a>
-                <a href="viber://chat?number={{ site.viber }}" style="background: var(--light); border: 1px solid var(--border); padding: 0.8rem 1.2rem; text-decoration: none; color: var(--primary); border-radius: 5px;">Viber</a>
-            </div>
-        </div>
+       {% include social-proof.html %}
     </div>
 </main>
+
 
