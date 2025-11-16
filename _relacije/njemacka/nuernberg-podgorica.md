@@ -1,22 +1,22 @@
 ---
 layout: relacija
-title: "Prevoz Pokojnika iz Berlina u Sarajevo"
-meta_description: "Prevoz pokojnika iz Berlina u Sarajevo - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
-canonical_url: "/relacije/njemacka/berlin-sarajevo/"
+title: "Prevoz Pokojnika iz Nürnberga u Podgorica"
+meta_description: "Prevoz pokojnika iz Nürnberga u Podgorica - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+canonical_url: "/relacije/njemacka/nuernberg-podgorica/"
 
-primary_keyword: "prevoz pokojnika iz berlin u sarajevo"
+primary_keyword: "prevoz pokojnika iz nürnberg u podgorica"
 secondary_keywords:
-  - "prevoz umrlih berlin sarajevo"
-  - "transport pokojnika njemačka bosna i hercegovina"
+  - "prevoz umrlih nürnberg podgorica"
+  - "transport pokojnika njemačka crna gora"
 
-polaziste: "Berlin"
+polaziste: "Nürnberg"
 polaziste_drzava: "Njemačka"
 polaziste_flag: "🇩🇪"
-odrediste: "Sarajevo"
-odrediste_drzava: "Bosna i Hercegovina"
-odrediste_flag: "🇧🇦"
-udaljenost_km: "1450"
-trajanje_h: "16-18"
+odrediste: "Podgorica"
+odrediste_drzava: "Crna Gora"
+odrediste_flag: "🇲🇪"
+udaljenost_km: "1150"
+trajanje_h: "13-15"
 
 parent_page:
   title: "Njemačka"
@@ -29,15 +29,15 @@ related_routes:
 ---
 
 <div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Berlina u Bosna i Hercegovina</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Berlina u Sarajevo</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Naša usluga <strong>prevoza umrlih iz Njemačkae u Bosna i Hercegovina</strong> dostupna je 24 sata dnevno, 7 dana u sedmici.</p>
+    <h2>Profesionalan prevoz umrlih iz Nürnberga u Crna Gora</h2>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Nürnberga u Podgorica</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Naša usluga <strong>prevoza umrlih iz Njemačkae u Crna Gora</strong> dostupna je 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u <strong>međunarodnom prevozu pokojnika</strong>, razumijemo koliko je ovaj proces težak za porodicu. Zato smo tu da vam olakšamo sve administrativne i logističke aspekte.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
-        <li>Preuzimanje pokojnika u Berlinu i okolini</li>
-        <li>Kompletan prevoz iz Berlina u Sarajevo</li>
+        <li>Preuzimanje pokojnika u Nürnbergu i okolini</li>
+        <li>Kompletan prevoz iz Nürnberga u Podgorica</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -53,16 +53,16 @@ related_routes:
 </div>
 
 <div class="content-section">
-    <h2>Transport Berlin - Sarajevo</h2>
-    <p>Ukupna udaljenost je približno <strong>1450 kilometara</strong>, a transport traje između <strong>16-18 sati</strong> zavisno od graničnih prelaza i saobraćajne situacije.</p>
+    <h2>Transport Nürnberg - Podgorica</h2>
+    <p>Ukupna udaljenost je približno <strong>1150 kilometara</strong>, a transport traje između <strong>13-15 sati</strong> zavisno od graničnih prelaza i saobraćajne situacije.</p>
 </div>
 
 <div class="content-section">
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Berlina u Sarajevo?</div>
-        <div class="faq-answer">Transport od Berlina do Sarajevoa traje između 16-18 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Nürnberga u Podgorica?</div>
+        <div class="faq-answer">Transport od Nürnberga do Podgoricaa traje između 13-15 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
     <div class="faq-item">
