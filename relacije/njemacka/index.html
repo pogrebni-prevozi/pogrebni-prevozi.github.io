@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Prevoz Pokojnika iz Njemačke"
-meta_description: "Profesionalan prevoz pokojnika iz cijele Njemačke u BiH, Srbiju i Crnu Goru, sve druge države Balkana. Sve relacije iz Berlina, Münchena, Frankfurta i drugih gradova. Dostupni 24/7."
+meta_description: "Profesionalan prevoz pokojnika iz cijele Njemačke u BiH, Srbiju i Crnu Goru. Sve relacije iz Berlina, Münchena, Frankfurta i drugih gradova. Dostupni 24/7."
 permalink: /relacije/njemacka/
 ---
 
@@ -40,107 +40,35 @@ permalink: /relacije/njemacka/
         </h2>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-            <!-- Berlin → Sarajevo -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/berlin-sarajevo/" style="text-decoration: none; color: inherit;">
+            {% assign njemacka_bih = site.relacije | where_exp: "item", "item.path contains 'njemacka'" | where_exp: "item", "item.odrediste_drzava == 'Bosna i Hercegovina'" %}
+            {% for relacija in njemacka_bih limit: 10 %}
+            <a href="{{ site.baseurl }}{{ relacija.url }}" style="text-decoration: none; color: inherit;">
                 <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
                      onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
                      onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
                     <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Berlin → Sarajevo</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 Berlin → 🇧🇦 Sarajevo</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1450 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 16-18 sati</p>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">{{ relacija.polaziste }} → {{ relacija.odrediste }}</h3>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">{{ relacija.polaziste_flag }} {{ relacija.polaziste }} → {{ relacija.odrediste_flag }} {{ relacija.odrediste }}</p>
+                        {% if relacija.udaljenost_km %}
+                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~{{ relacija.udaljenost_km }} km</p>
+                        {% endif %}
+                        {% if relacija.trajanje_h %}
+                        <p style="font-size: 0.95rem;">⏱️ Trajanje: {{ relacija.trajanje_h }} sati</p>
+                        {% endif %}
                     </div>
                     <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
                         Detaljne informacije →
                     </span>
                 </div>
             </a>
-
-            <!-- Berlin → Banja Luka -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/berlin-banja-luka/" style="text-decoration: none; color: inherit;">
-                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
-                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                    <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Berlin → Banja Luka</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 Berlin → 🇧🇦 Banja Luka</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1420 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 16-17 sati</p>
-                    </div>
-                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
-                        Detaljne informacije →
-                    </span>
-                </div>
-            </a>
-
-            <!-- München → Sarajevo -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/muenchen-sarajevo/" style="text-decoration: none; color: inherit;">
-                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
-                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                    <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">München → Sarajevo</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 München → 🇧🇦 Sarajevo</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1050 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 12-14 sati</p>
-                    </div>
-                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
-                        Detaljne informacije →
-                    </span>
-                </div>
-            </a>
-
-            <!-- Frankfurt → Sarajevo -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/frankfurt-sarajevo/" style="text-decoration: none; color: inherit;">
-                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
-                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                    <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Frankfurt → Sarajevo</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 Frankfurt → 🇧🇦 Sarajevo</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1380 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 15-17 sati</p>
-                    </div>
-                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
-                        Detaljne informacije →
-                    </span>
-                </div>
-            </a>
-
-            <!-- Hamburg → Sarajevo -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/hamburg-sarajevo/" style="text-decoration: none; color: inherit;">
-                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
-                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                    <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Hamburg → Sarajevo</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 Hamburg → 🇧🇦 Sarajevo</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1650 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 18-20 sati</p>
-                    </div>
-                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
-                        Detaljne informacije →
-                    </span>
-                </div>
-            </a>
-
-            <!-- Köln → Sarajevo -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/koeln-sarajevo/" style="text-decoration: none; color: inherit;">
-                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
-                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                    <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Köln → Sarajevo</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 Köln → 🇧🇦 Sarajevo</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1500 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 17-19 sati</p>
-                    </div>
-                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
-                        Detaljne informacije →
-                    </span>
-                </div>
-            </a>
+            {% endfor %}
+            
+            {% if njemacka_bih.size > 10 %}
+            <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; background: var(--light);">
+                <p style="color: var(--text); margin-bottom: 1rem;">Prikazano {{ njemacka_bih.size | at_most: 10 }} od {{ njemacka_bih.size }} relacija u BiH</p>
+                <p style="font-size: 0.9rem; color: var(--accent);">Za detaljne informacije o bilo kojoj relaciji, kontaktirajte nas</p>
+            </div>
+            {% endif %}
         </div>
     </section>
 
@@ -151,39 +79,28 @@ permalink: /relacije/njemacka/
         </h2>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-            <!-- Berlin → Beograd -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/berlin-beograd/" style="text-decoration: none; color: inherit;">
+            {% assign njemacka_srbija = site.relacije | where_exp: "item", "item.path contains 'njemacka'" | where_exp: "item", "item.odrediste_drzava == 'Srbija'" %}
+            {% for relacija in njemacka_srbija limit: 6 %}
+            <a href="{{ site.baseurl }}{{ relacija.url }}" style="text-decoration: none; color: inherit;">
                 <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
                      onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
                      onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
                     <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Berlin → Beograd</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 Berlin → 🇷🇸 Beograd</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1520 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 17-19 sati</p>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">{{ relacija.polaziste }} → {{ relacija.odrediste }}</h3>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">{{ relacija.polaziste_flag }} {{ relacija.polaziste }} → {{ relacija.odrediste_flag }} {{ relacija.odrediste }}</p>
+                        {% if relacija.udaljenost_km %}
+                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~{{ relacija.udaljenost_km }} km</p>
+                        {% endif %}
+                        {% if relacija.trajanje_h %}
+                        <p style="font-size: 0.95rem;">⏱️ Trajanje: {{ relacija.trajanje_h }} sati</p>
+                        {% endif %}
                     </div>
                     <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
                         Detaljne informacije →
                     </span>
                 </div>
             </a>
-
-            <!-- München → Beograd -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/muenchen-beograd/" style="text-decoration: none; color: inherit;">
-                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
-                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                    <div style="padding: 2rem;">
-                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">München → Beograd</h3>
-                        <p style="color: var(--accent); margin-bottom: 1rem;">🇩🇪 München → 🇷🇸 Beograd</p>
-                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~1100 km</p>
-                        <p style="font-size: 0.95rem;">⏱️ Trajanje: 13-15 sati</p>
-                    </div>
-                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
-                        Detaljne informacije →
-                    </span>
-                </div>
-            </a>
+            {% endfor %}
         </div>
     </section>
 
