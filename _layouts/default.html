@@ -9,14 +9,12 @@
 
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <!-- SEO -->
     {% if page.canonical_url %}
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.canonical_url }}">
     {% else %}
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
     {% endif %}
 
-    <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description"
         content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
@@ -25,26 +23,14 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ site.locale }}">
 
-    <!-- Schema.org Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "{{ site.company_name }}",
-      "description": "{{ site.description }}",
-      "telephone": "{{ site.phone }}",
-      "url": "{{ site.website }}",
-      "openingHours": "Mo-Su 00:00-23:59",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "SI"
-      },
-      "areaServed": ["Bosna i Hercegovina", "Njemačka", "Austrija", "Slovenija", "Hrvatska", "Srbija", "Crna Gora", "Makedonija", "Kosovo"],
-      "sameAs": ["{{ site.facebook }}"]
-    }
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WMZFXTWKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7WMZFXTWKP');
     </script>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
 
