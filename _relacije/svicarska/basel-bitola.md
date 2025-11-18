@@ -1,19 +1,19 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Berna u Novi Sad"
-meta_description: "Prevoz pokojnika iz Berna u Novi Sad - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
-canonical_url: "/relacije/svicarska/bern-novi-sad/"
+title: "Prevoz pokojnika iz Basela u Bitolu"
+meta_description: "Prevoz pokojnika iz Basela u Bitolu - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+canonical_url: "/relacije/svicarska/basel-bitola/"
 
-primary_keyword: "prevoz pokojnika iz bern u novi sad"
+primary_keyword: "prevoz pokojnika iz basel u bitola"
 
-polaziste: "Bern"
+polaziste: "Basel"
 polaziste_drzava: "Švicarska"
 polaziste_flag: "🇨🇭"
-odrediste: "Novi Sad"
-odrediste_drzava: "Srbija"
-odrediste_flag: "🇷🇸"
-udaljenost_km: "1430"
-trajanje_h: "16-18"
+odrediste: "Bitola"
+odrediste_drzava: "Sjeverna Makedonija"
+odrediste_flag: "🇲🇰"
+udaljenost_km: "1490"
+trajanje_h: "17-19"
 
 parent_page:
   title: "Švicarska"
@@ -21,15 +21,15 @@ parent_page:
 ---
 
 <div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Berna u Srbiju</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Berna u Novi Sad</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
+    <h2>Profesionalan prevoz umrlih iz Basela u Sjevernu Makedoniju</h2>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Basela u Bitolu</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
-        <li>Preuzimanje pokojnika u Bernu i okolini</li>
-        <li>Kompletan prevoz iz Berna u Novi Sad</li>
+        <li>Preuzimanje pokojnika u Baselu i okolini</li>
+        <li>Kompletan prevoz iz Basela u Bitolu</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -45,16 +45,16 @@ parent_page:
 </div>
 
 <div class="content-section">
-    <h2>Transport Bern - Novi Sad</h2>
-    <p>Ukupna udaljenost je približno <strong>1430 kilometara</strong>, a transport traje između <strong>16-18 sati</strong> zavisno od graničnih prelaza.</p>
+    <h2>Transport Basel - Bitola</h2>
+    <p>Ukupna udaljenost je približno <strong>1490 kilometara</strong>, a transport traje između <strong>17-19 sati</strong> zavisno od graničnih prelaza.</p>
 </div>
 
 <div class="content-section">
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Berna u Novi Sad?</div>
-        <div class="faq-answer">Transport traje između 16-18 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Basela u Bitolu?</div>
+        <div class="faq-answer">Transport traje između 17-19 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
     <div class="faq-item">

@@ -1,13 +1,10 @@
 ---
 layout: relacija
-title: "Prevoz Pokojnika iz Berna u Sarajevo"
+title: "Prevoz pokojnika iz Berna u Sarajevo"
 meta_description: "Prevoz pokojnika iz Berna u Sarajevo - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
 canonical_url: "/relacije/svicarska/bern-sarajevo/"
 
 primary_keyword: "prevoz pokojnika iz bern u sarajevo"
-secondary_keywords:
-  - "prevoz umrlih bern sarajevo"
-  - "transport pokojnika švicarska bosna i hercegovina"
 
 polaziste: "Bern"
 polaziste_drzava: "Švicarska"
@@ -21,18 +18,13 @@ trajanje_h: "15-17"
 parent_page:
   title: "Švicarska"
   url: "/relacije/svicarska/"
-
-related_routes:
-  - title: "Slične relacije"
-    url: "/relacije/svicarska/"
-    description: "Pogledajte sve relacije"
 ---
 
 <div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Berna u Bosna i Hercegovina</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Berna u Sarajevo</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Naša usluga <strong>prevoza umrlih iz Švicarskae u Bosna i Hercegovina</strong> dostupna je 24 sata dnevno, 7 dana u sedmici.</p>
+    <h2>Profesionalan prevoz umrlih iz Berna u Bosnu i Hercegovinu</h2>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Berna u Sarajevo</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
-    <p>Sa preko 15 godina iskustva u <strong>međunarodnom prevozu pokojnika</strong>, razumijemo koliko je ovaj proces težak za porodicu. Zato smo tu da vam olakšamo sve administrativne i logističke aspekte.</p>
+    <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
@@ -49,12 +41,12 @@ related_routes:
 
 <div class="info-box">
     <h4>⚠️ Važna napomena</h4>
-    <p>Za prevoz pokojnika potrebno je pribaviti određenu dokumentaciju. Mi preuzimamo svu komunikaciju sa institucijama i olakšavamo porodici ovaj težak period.</p>
+    <p>Za prevoz pokojnika potrebno je pribaviti određenu dokumentaciju. Mi preuzimamo svu komunikaciju sa institucijama.</p>
 </div>
 
 <div class="content-section">
     <h2>Transport Bern - Sarajevo</h2>
-    <p>Ukupna udaljenost je približno <strong>1300 kilometara</strong>, a transport traje između <strong>15-17 sati</strong> zavisno od graničnih prelaza i saobraćajne situacije.</p>
+    <p>Ukupna udaljenost je približno <strong>1300 kilometara</strong>, a transport traje između <strong>15-17 sati</strong> zavisno od graničnih prelaza.</p>
 </div>
 
 <div class="content-section">
@@ -62,17 +54,12 @@ related_routes:
     
     <div class="faq-item">
         <div class="faq-question">Koliko traje prevoz pokojnika iz Berna u Sarajevo?</div>
-        <div class="faq-answer">Transport od Berna do Sarajevoa traje između 15-17 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+        <div class="faq-answer">Transport traje između 15-17 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Da li je potrebno da porodica ide sa transportom?</div>
         <div class="faq-answer">Ne, nije potrebno. Naši profesionalni vozači vode cijeli transport. Vi ostajete u kontaktu sa nama tokom cijelog puta.</div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">Ko pribavlja dokumentaciju za prevoz?</div>
-        <div class="faq-answer">Mi možemo preuzeti kompletnu brigu o dokumentaciji. Naš tim ima dugogodišnje iskustvo u radu sa svim potrebnim institucijama.</div>
     </div>
 
     <div class="faq-item">

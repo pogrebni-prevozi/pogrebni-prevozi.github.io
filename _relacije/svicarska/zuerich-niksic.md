@@ -1,19 +1,19 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Berna u Novi Sad"
-meta_description: "Prevoz pokojnika iz Berna u Novi Sad - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
-canonical_url: "/relacije/svicarska/bern-novi-sad/"
+title: "Prevoz pokojnika iz Züricha u Nikšić"
+meta_description: "Prevoz pokojnika iz Züricha u Nikšić - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+canonical_url: "/relacije/svicarska/zuerich-niksic/"
 
-primary_keyword: "prevoz pokojnika iz bern u novi sad"
+primary_keyword: "prevoz pokojnika iz zürich u nikšić"
 
-polaziste: "Bern"
+polaziste: "Zürich"
 polaziste_drzava: "Švicarska"
 polaziste_flag: "🇨🇭"
-odrediste: "Novi Sad"
-odrediste_drzava: "Srbija"
-odrediste_flag: "🇷🇸"
-udaljenost_km: "1430"
-trajanje_h: "16-18"
+odrediste: "Nikšić"
+odrediste_drzava: "Crna Gora"
+odrediste_flag: "🇲🇪"
+udaljenost_km: "1150"
+trajanje_h: "13-15"
 
 parent_page:
   title: "Švicarska"
@@ -21,15 +21,15 @@ parent_page:
 ---
 
 <div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Berna u Srbiju</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Berna u Novi Sad</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
+    <h2>Profesionalan prevoz umrlih iz Züricha u Crnu Goru</h2>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Züricha u Nikšić</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
-        <li>Preuzimanje pokojnika u Bernu i okolini</li>
-        <li>Kompletan prevoz iz Berna u Novi Sad</li>
+        <li>Preuzimanje pokojnika u Zürichu i okolini</li>
+        <li>Kompletan prevoz iz Züricha u Nikšić</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -45,16 +45,16 @@ parent_page:
 </div>
 
 <div class="content-section">
-    <h2>Transport Bern - Novi Sad</h2>
-    <p>Ukupna udaljenost je približno <strong>1430 kilometara</strong>, a transport traje između <strong>16-18 sati</strong> zavisno od graničnih prelaza.</p>
+    <h2>Transport Zürich - Nikšić</h2>
+    <p>Ukupna udaljenost je približno <strong>1150 kilometara</strong>, a transport traje između <strong>13-15 sati</strong> zavisno od graničnih prelaza.</p>
 </div>
 
 <div class="content-section">
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Berna u Novi Sad?</div>
-        <div class="faq-answer">Transport traje između 16-18 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Züricha u Nikšić?</div>
+        <div class="faq-answer">Transport traje između 13-15 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
     <div class="faq-item">
