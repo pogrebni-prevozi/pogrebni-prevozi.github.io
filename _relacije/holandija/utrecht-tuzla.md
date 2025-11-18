@@ -1,7 +1,7 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Utrechta u Tuzla"
-meta_description: "Prevoz pokojnika iz Utrechta u Tuzla - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+title: "Prevoz pokojnika iz Utrechta u Tuzlu"
+meta_description: "Prevoz pokojnika iz Utrechta u Tuzlu - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
 canonical_url: "/relacije/holandija/utrecht-tuzla/"
 
 primary_keyword: "prevoz pokojnika iz utrecht u tuzla"
@@ -22,14 +22,14 @@ parent_page:
 
 <div class="content-section">
     <h2>Profesionalan prevoz umrlih iz Utrechta u Bosnu i Hercegovinu</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Utrechta u Tuzla</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Utrechta u Tuzlu</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
         <li>Preuzimanje pokojnika u Utrechtu i okolini</li>
-        <li>Kompletan prevoz iz Utrechta u Tuzla</li>
+        <li>Kompletan prevoz iz Utrechta u Tuzlu</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -53,7 +53,7 @@ parent_page:
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Utrechta u Tuzla?</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Utrechta u Tuzlu?</div>
         <div class="faq-answer">Transport traje između 19-21 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
