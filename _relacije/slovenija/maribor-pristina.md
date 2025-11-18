@@ -1,19 +1,19 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Kopra u Sarajevo"
-meta_description: "Prevoz pokojnika iz Kopra u Sarajevo - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
-canonical_url: "/relacije/slovenija/koper-sarajevo/"
+title: "Prevoz pokojnika iz Maribora u Prištinu"
+meta_description: "Prevoz pokojnika iz Maribora u Prištinu - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+canonical_url: "/relacije/slovenija/maribor-pristina/"
 
-primary_keyword: "prevoz pokojnika iz koper u sarajevo"
+primary_keyword: "prevoz pokojnika iz maribor u priština"
 
-polaziste: "Koper"
+polaziste: "Maribor"
 polaziste_drzava: "Slovenija"
 polaziste_flag: "🇸🇮"
-odrediste: "Sarajevo"
-odrediste_drzava: "Bosna i Hercegovina"
-odrediste_flag: "🇧🇦"
-udaljenost_km: "500"
-trajanje_h: "5-6"
+odrediste: "Priština"
+odrediste_drzava: "Kosovo"
+odrediste_flag: "🇽🇰"
+udaljenost_km: "580"
+trajanje_h: "6-7"
 
 parent_page:
   title: "Slovenija"
@@ -21,15 +21,15 @@ parent_page:
 ---
 
 <div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Kopra u Bosnu i Hercegovinu</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Kopra u Sarajevo</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
+    <h2>Profesionalan prevoz umrlih iz Maribora u Kosovo</h2>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Maribora u Prištinu</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
-        <li>Preuzimanje pokojnika u Kopru i okolini</li>
-        <li>Kompletan prevoz iz Kopra u Sarajevo</li>
+        <li>Preuzimanje pokojnika u Mariboru i okolini</li>
+        <li>Kompletan prevoz iz Maribora u Prištinu</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -45,16 +45,16 @@ parent_page:
 </div>
 
 <div class="content-section">
-    <h2>Transport Koper - Sarajevo</h2>
-    <p>Ukupna udaljenost je približno <strong>500 kilometara</strong>, a transport traje između <strong>5-6 sati</strong> zavisno od graničnih prelaza.</p>
+    <h2>Transport Maribor - Priština</h2>
+    <p>Ukupna udaljenost je približno <strong>580 kilometara</strong>, a transport traje između <strong>6-7 sati</strong> zavisno od graničnih prelaza.</p>
 </div>
 
 <div class="content-section">
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Kopra u Sarajevo?</div>
-        <div class="faq-answer">Transport traje između 5-6 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Maribora u Prištinu?</div>
+        <div class="faq-answer">Transport traje između 6-7 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
     <div class="faq-item">
