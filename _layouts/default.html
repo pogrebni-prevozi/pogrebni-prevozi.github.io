@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
-
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-
+    
     {% if page.canonical_url %}
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.canonical_url }}">
     {% else %}
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
     {% endif %}
-
+    
+   
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description"
         content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
@@ -22,7 +21,14 @@
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ site.locale }}">
-
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon/favicon.ico">
+    
+ 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WMZFXTWKP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -30,17 +36,13 @@
       gtag('js', new Date());
       gtag('config', 'G-7WMZFXTWKP');
     </script>
-
+    
+   
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
-
 <body>
     {% include header.html %}
-
     {{ content }}
-
     {% include footer.html %}
 </body>
-
-
 </html>
