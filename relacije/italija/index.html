@@ -1,78 +1,200 @@
 ---
 layout: default
 title: "Prevoz pokojnika iz Italije"
-meta_description: "Hitan i pouzdan prevoz pokojnika iz Italije u BiH, Srbiju i Crnu Goru. Relacije iz Milana, Rima,
-Trsta i ostalih gradova. Dostupni 24/7."
+meta_description: "Profesionalan prevoz pokojnika iz cijele Italije u BiH, Srbiju i Crnu Goru. Sve relacije iz Rima, Milana, Venecije i drugih gradova. Dostupni 24/7."
 permalink: /relacije/italija/
 ---
 
 <div class="breadcrumbs">
-    <div class="breadcrumbs-content">
-        <a href="{{ site.baseurl }}/">Početna</a>
-        <span>›</span>
-        <a href="{{ site.baseurl }}/relacije/">Relacije</a>
-        <span>›</span>
-        <strong>Italija</strong>
-    </div>
+    <div class="breadcrumbs-content">
+        <a href="{{ site.baseurl }}/">Početna</a>
+        <span>›</span>
+        <a href="{{ site.baseurl }}/relacije/">Relacije</a>
+        <span>›</span>
+        <strong>Italija</strong>
+    </div>
 </div>
 
 <main class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
-    <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 2px solid var(--gold);">
-        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">🇮🇹 Prevoz pokojnika iz Italije</h1>
-        <p style="font-size: 1.1rem; color: var(--accent); max-width: 800px; margin: 0 auto; line-height: 1.8;">
-            Organizujemo kompletan prevoz pokojnika iz svih dijelova Italije. Brza papirologija i siguran transport.
-        </p>
-    </div>
+    <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 2px solid var(--gold);">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">🇮🇹 Prevoz pokojnika iz Italije</h1>
+        <p style="font-size: 1.1rem; color: var(--accent); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+            Profesionalan prevoz umrlih iz cijele Italije u Bosnu i Hercegovinu, Srbiju i Crnu Goru. 
+            Kompletan servis sa svom potrebnom dokumentacijom. Dostupni 24/7.
+        </p>
+    </div>
 
-    <div class="contact-box" style="margin-bottom: 4rem;">
-        <h3>Potreban vam je prevoz pokojnika iz Italije?</h3>
-        <p>Kontaktirajte nas odmah za hitan prevoz</p>
-        <div class="contact-info">
-            <a href="tel:{{ site.phone }}">📞 {{ site.phone_display }}</a>
-            <a href="https://wa.me/{{ site.whatsapp }}">💬 WhatsApp</a>
-        </div>
-    </div>
+    <div class="contact-box" style="margin-bottom: 4rem;">
+        <h3>Potreban vam je prevoz pokojnika iz Italije?</h3>
+        <p>Kontaktirajte nas odmah - dostupni smo 24 sata dnevno</p>
+        <div class="contact-info">
+            <a href="tel:{{ site.phone }}">📞 {{ site.phone_display }}</a>
+            <a href="https://wa.me/{{ site.whatsapp }}">💬 WhatsApp</a>
+        </div>
+      </div>
 
-    <section style="margin-bottom: 4rem;">
-        <h2
-            style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary); border-left: 4px solid var(--gold); padding-left: 1rem;">
-            Ključne relacije iz Italije
-        </h2>
+    {% assign italija_relacije = site.relacije | where_exp: "item", "item.path contains 'italija'" | sort: "title" %}
+    
+    {% if italija_relacije.size > 0 %}
+    
+        {% assign bih_relacije = italija_relacije | where_exp: "item", "item.odrediste_drzava contains 'Bosna'" %}
+    {% if bih_relacije.size > 0 %}
+    <section style="margin-bottom: 4rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary); border-left: 4px solid var(--gold); padding-left: 1rem;">
+            Prevoz u Bosnu i Hercegovinu 🇧🇦 ({{ bih_relacije.size }} relacija)
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            {% for relacija in bih_relacije %}
+            <a href="{{ site.baseurl }}{{ relacija.url }}" style="text-decoration: none; color: inherit;">
+                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
+                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
+                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+                    <div style="padding: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">{{ relacija.polaziste }} → {{ relacija.odrediste }}</h3>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">{{ relacija.polaziste_flag }} {{ relacija.polaziste }} → {{ relacija.odrediste_flag }} {{ relacija.odrediste }}</p>
+                        {% if relacija.udaljenost_km %}
+                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~{{ relacija.udaljenost_km }} km</p>
+                        {% endif %}
+                        {% if relacija.trajanje_h %}
+                        <p style="font-size: 0.95rem;">⏱️ Trajanje: {{ relacija.trajanje_h }} sati</p>
+                        {% endif %}
+                    </div>
+                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
+                        Detaljne informacije →
+                    </span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-            <div style="background: var(--white); border: 1px solid var(--border); padding: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Trst (Trieste) → Sarajevo
-                </h3>
-                <p style="color: var(--accent); margin-bottom: 1rem;">🇮🇹 Trst → 🇧🇦 Sarajevo</p>
-                <p style="margin-bottom: 0.5rem;">📏 ~550 km</p>
-                <p>⏱️ 7-9 sati</p>
-            </div>
+        {% assign srbija_relacije = italija_relacije | where_exp: "item", "item.odrediste_drzava contains 'Srbija'" %}
+    {% if srbija_relacije.size > 0 %}
+    <section style="margin-bottom: 4rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary); border-left: 4px solid var(--gold); padding-left: 1rem;">
+            Prevoz u Srbiju 🇷🇸 ({{ srbija_relacije.size }} relacija)
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            {% for relacija in srbija_relacije %}
+            <a href="{{ site.baseurl }}{{ relacija.url }}" style="text-decoration: none; color: inherit;">
+                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
+                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
+                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+                    <div style="padding: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">{{ relacija.polaziste }} → {{ relacija.odrediste }}</h3>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">{{ relacija.polaziste_flag }} {{ relacija.polaziste }} → {{ relacija.odrediste_flag }} {{ relacija.odrediste }}</p>
+                        {% if relacija.udaljenost_km %}
+                        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">📏 Udaljenost: ~{{ relacija.udaljenost_km }} km</p>
+                        {% endif %}
+                        {% if relacija.trajanje_h %}
+                        <p style="font-size: 0.95rem;">⏱️ Trajanje: {{ relacija.trajanje_h }} sati</p>
+                        {% endif %}
+                    </div>
+                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
+                        Detaljne informacije →
+                    </span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 
-            <div style="background: var(--white); border: 1px solid var(--border); padding: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Milano → Beograd</h3>
-                <p style="color: var(--accent); margin-bottom: 1rem;">🇮🇹 Milano → 🇷🇸 Beograd</p>
-                <p style="margin-bottom: 0.5rem;">📏 ~1100 km</p>
-                <p>⏱️ 12-14 sati</p>
-            </div>
+        {% assign cg_relacije = italija_relacije | where_exp: "item", "item.odrediste_drzava contains 'Crna Gora'" %}
+    {% if cg_relacije.size > 0 %}
+    <section style="margin-bottom: 4rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary); border-left: 4px solid var(--gold); padding-left: 1rem;">
+            Prevoz u Crnu Goru 🇲🇪 ({{ cg_relacije.size }} relacija)
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            {% for relacija in cg_relacije %}
+            <a href="{{ site.baseurl }}{{ relacija.url }}" style="text-decoration: none; color: inherit;">
+                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
+                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
+                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+                    <div style="padding: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">{{ relacija.polaziste }} → {{ relacija.odrediste }}</h3>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">{{ relacija.polaziste_flag }} → {{ relacija.odrediste_flag }}</p>
+                    </div>
+                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
+                        Detaljne informacije →
+                    </span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 
-            <div style="background: var(--white); border: 1px solid var(--border); padding: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">Rim (Roma) → Bosna i
-                    Hercegovina</h3>
-                <p style="color: var(--accent); margin-bottom: 1rem;">🇮🇹 Rim → 🇧🇦 BiH</p>
-                <p style="margin-bottom: 0.5rem;">📏 ~1300 km</p>
-                <p>⏱️ 15-17 sati</p>
-            </div>
-        </div>
-    </section>
+        {% assign makedonija_relacije = italija_relacije | where_exp: "item", "item.odrediste_drzava contains 'Makedonija'" %}
+    {% if makedonija_relacije.size > 0 %}
+    <section style="margin-bottom: 4rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary); border-left: 4px solid var(--gold); padding-left: 1rem;">
+            Prevoz u Sjevernu Makedoniju 🇲🇰 ({{ makedonija_relacije.size }} relacija)
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            {% for relacija in makedonija_relacije %}
+            <a href="{{ site.baseurl }}{{ relacija.url }}" style="text-decoration: none; color: inherit;">
+                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
+                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
+                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+                    <div style="padding: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">{{ relacija.polaziste }} → {{ relacija.odrediste }}</h3>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">{{ relacija.polaziste_flag }} → {{ relacija.odrediste_flag }}</p>
+                    </div>
+                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
+                        Detaljne informacije →
+                    </span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 
-    <div class="contact-box" style="margin-top: 4rem;">
-        <h3>Kontaktirajte nas</h3>
-        <p>Dostupni 24/7 za sve informacije</p>
-        <div class="contact-info">
-            <a href="tel:{{ site.phone }}">📞 {{ site.phone_display }}</a>
-            <a href="https://wa.me/{{ site.whatsapp }}">💬 WhatsApp</a>
-        </div>
-    </div>
+        {% assign kosovo_relacije = italija_relacije | where_exp: "item", "item.odrediste_drzava contains 'Kosovo'" %}
+    {% if kosovo_relacije.size > 0 %}
+    <section style="margin-bottom: 4rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary); border-left: 4px solid var(--gold); padding-left: 1rem;">
+            Prevoz na Kosovo 🇽🇰 ({{ kosovo_relacije.size }} relacija)
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            {% for relacija in kosovo_relacije %}
+            <a href="{{ site.baseurl }}{{ relacija.url }}" style="text-decoration: none; color: inherit;">
+                <div style="background: var(--white); border: 1px solid var(--border); padding: 0; overflow: hidden; transition: all 0.3s;"
+                     onmouseover="this.style.borderColor='var(--gold)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'"
+                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+                    <div style="padding: 2rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.4rem;">{{ relacija.polaziste }} → {{ relacija.odrediste }}</h3>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">{{ relacija.polaziste_flag }} → {{ relacija.odrediste_flag }}</p>
+                    </div>
+                    <span style="display: block; padding: 0.8rem; background: var(--gold); color: var(--white); text-align: center; font-weight: 500;">
+                        Detaljne informacije →
+                    </span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 
+    {% else %}
+    <p style="text-align: center; color: var(--accent); font-size: 1.1rem;">Trenutno se učitavaju relacije...</p>
+    {% endif %}
 
+    <div class="contact-box" style="margin-top: 4rem;">
+        <h3>Potreban vam je transport pokojnika iz Italije?</h3>
+        <p>Kontaktirajte nas odmah za sve informacije i hitne slučajeve</p>
+        <div class="contact-info">
+            <a href="tel:{{ site.phone }}">📞 {{ site.phone_display }}</a>
+            <a href="https://wa.me/{{ site.whatsapp }}">💬 WhatsApp</a>
+            <a href="viber://chat?number={{ site.viber }}">Viber</a>
+        </div>
+    </div>
 </main>
