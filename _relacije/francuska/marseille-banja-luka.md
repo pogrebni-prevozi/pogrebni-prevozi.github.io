@@ -1,7 +1,7 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Marseillea u Banja Luka"
-meta_description: "Prevoz pokojnika iz Marseillea u Banja Luka - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+title: "Prevoz pokojnika iz Marseillea u Banju Luku"
+meta_description: "Prevoz pokojnika iz Marseillea u Banju Luku - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
 canonical_url: "/relacije/francuska/marseille-banja-luka/"
 
 primary_keyword: "prevoz pokojnika iz marseille u banja luka"
@@ -22,14 +22,14 @@ parent_page:
 
 <div class="content-section">
     <h2>Profesionalan prevoz umrlih iz Marseillea u Bosnu i Hercegovinu</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Marseillea u Banja Luka</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Marseillea u Banju Luku</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
         <li>Preuzimanje pokojnika u Marseilleu i okolini</li>
-        <li>Kompletan prevoz iz Marseillea u Banja Luka</li>
+        <li>Kompletan prevoz iz Marseillea u Banju Luku</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -53,7 +53,7 @@ parent_page:
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Marseillea u Banja Luka?</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Marseillea u Banju Luku?</div>
         <div class="faq-answer">Transport traje između 19-21 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 

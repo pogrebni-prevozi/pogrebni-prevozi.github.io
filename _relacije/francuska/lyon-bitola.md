@@ -1,7 +1,7 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Lyona u Bitola"
-meta_description: "Prevoz pokojnika iz Lyona u Bitola - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+title: "Prevoz pokojnika iz Lyona u Bitolu"
+meta_description: "Prevoz pokojnika iz Lyona u Bitolu - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
 canonical_url: "/relacije/francuska/lyon-bitola/"
 
 primary_keyword: "prevoz pokojnika iz lyon u bitola"
@@ -22,14 +22,14 @@ parent_page:
 
 <div class="content-section">
     <h2>Profesionalan prevoz umrlih iz Lyona u Sjevernu Makedoniju</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Lyona u Bitola</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Lyona u Bitolu</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
         <li>Preuzimanje pokojnika u Lyonu i okolini</li>
-        <li>Kompletan prevoz iz Lyona u Bitola</li>
+        <li>Kompletan prevoz iz Lyona u Bitolu</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -53,7 +53,7 @@ parent_page:
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Lyona u Bitola?</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Lyona u Bitolu?</div>
         <div class="faq-answer">Transport traje između 20-22 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
