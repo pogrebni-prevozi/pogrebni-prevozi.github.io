@@ -1,19 +1,19 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Münchena u Tuzlu"
-meta_description: "Prevoz pokojnika iz Münchena u Tuzlu - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
-canonical_url: "/relacije/njemacka/muenchen-tuzla/"
+title: "Prevoz pokojnika iz Stuttgarta u Nikšić"
+meta_description: "Prevoz pokojnika iz Stuttgarta u Nikšić - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+canonical_url: "/relacije/njemacka/stuttgart-niksic/"
 
-primary_keyword: "prevoz pokojnika iz münchen u tuzla"
+primary_keyword: "prevoz pokojnika iz stuttgart u nikšić"
 
-polaziste: "München"
+polaziste: "Stuttgart"
 polaziste_drzava: "Njemačka"
 polaziste_flag: "🇩🇪"
-odrediste: "Tuzla"
-odrediste_drzava: "Bosna i Hercegovina"
-odrediste_flag: "🇧🇦"
-udaljenost_km: "1050"
-trajanje_h: "12-14"
+odrediste: "Nikšić"
+odrediste_drzava: "Crna Gora"
+odrediste_flag: "🇲🇪"
+udaljenost_km: "1200"
+trajanje_h: "14-16"
 
 parent_page:
   title: "Njemačka"
@@ -21,15 +21,15 @@ parent_page:
 ---
 
 <div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Münchena u Bosnu i Hercegovinu</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Münchena u Tuzlu</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
+    <h2>Profesionalan prevoz umrlih iz Stuttgarta u Crnu Goru</h2>
+    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Stuttgarta u Nikšić</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
     
     <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
 
     <h3>Šta obuhvata naša usluga?</h3>
     <ul>
-        <li>Preuzimanje pokojnika u Münchenu i okolini</li>
-        <li>Kompletan prevoz iz Münchena u Tuzlu</li>
+        <li>Preuzimanje pokojnika u Stuttgartu i okolini</li>
+        <li>Kompletan prevoz iz Stuttgarta u Nikšić</li>
         <li>Priprema svih potrebnih dokumenata</li>
         <li>Leichenpass (transportni pasoš za umrle)</li>
         <li>Sprovodnica iz konzulata</li>
@@ -45,16 +45,16 @@ parent_page:
 </div>
 
 <div class="content-section">
-    <h2>Transport München - Tuzla</h2>
-    <p>Ukupna udaljenost je približno <strong>1050 kilometara</strong>, a transport traje između <strong>12-14 sati</strong> zavisno od graničnih prelaza.</p>
+    <h2>Transport Stuttgart - Nikšić</h2>
+    <p>Ukupna udaljenost je približno <strong>1200 kilometara</strong>, a transport traje između <strong>14-16 sati</strong> zavisno od graničnih prelaza.</p>
 </div>
 
 <div class="content-section">
     <h2>Često postavljana pitanja</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Münchena u Tuzlu?</div>
-        <div class="faq-answer">Transport traje između 12-14 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+        <div class="faq-question">Koliko traje prevoz pokojnika iz Stuttgarta u Nikšić?</div>
+        <div class="faq-answer">Transport traje između 14-16 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
     </div>
 
     <div class="faq-item">
