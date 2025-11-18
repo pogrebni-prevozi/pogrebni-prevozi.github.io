@@ -7,13 +7,14 @@
             </div>
             
             <div class="footer-section">
-                <h3>Kontakt</h3>
-                <ul>
-                    <li>📞 <a href="tel:{{ site.phone }}">{{ site.phone_display }}</a></li>
-                    <li>🌐 <a href="{{ site.website }}" target="_blank" rel="noopener">pogrebne-storitve-aljic.eu</a></li>
-                    <li>👥 <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
-                </ul>
-            </div>
+    <h3>Kontakt</h3>
+    <ul>
+        <li>📞 <a href="tel:{{ site.phone }}">{{ site.phone_display }}</a></li>
+        <li>🌐 <a href="{{ site.website }}" target="_blank" rel="noopener">pogrebne-storitve-aljic.eu</a></li>
+        <li>👥 <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
+        <li>🗺️ <a href="{{ site.baseurl }}/relacije/" {% if page.url contains "/relacije" %}class="active"{% endif %}>Relacije</a></li>
+    </ul>
+</div>
             
             <div class="footer-section">
                 <h3>Relacije</h3>
@@ -36,3 +37,4 @@
 <div class="fixed-cta">
     <a href="tel:{{ site.phone }}">📞 POZOVI</a>
 </div>
+
