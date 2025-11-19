@@ -7,7 +7,7 @@ baseurl: ""
 # Contact Info
 phone: "+386 70 443 005"
 phone_display: "+386 70 443 005"
-website: https://pogrebne-storitve-aljic.eu
+website: https://pogrebni-prevozi.github.io
 facebook: https://facebook.com/storitve.aljic
 whatsapp: "38670443005"
 viber: "38670443005"
@@ -88,3 +88,4 @@ seo:
     - "transport pokojnika"
     - "prevoz umrlih osoba"
     - "repatrijacija umrlih"
+
