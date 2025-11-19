@@ -71,6 +71,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    position: relative; 
 }
 
 .logo {
@@ -80,6 +81,27 @@ header {
     letter-spacing: 0.5px;
     text-decoration: none;
 }
+
+.header-logo-image {
+    /* Savršeno centriranje */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+.header-logo-image img {
+    max-height: 35px; 
+    width: auto;
+    
+    opacity: 0.1; 
+    border-radius: 4px;
+}
+/* ---------------------------------- */
+
 
 nav {
     display: flex;
@@ -482,6 +504,15 @@ footer {
     .mobile-menu-toggle {
         display: block;
     }
+    
+    .header-logo-image {
+        display: block; 
+    }
+    
+    .header-logo-image img {
+        max-height: 25px;
+    }
+    /* -------------------------------------- */
     
     /* Hide text navigation on mobile */
     nav {
