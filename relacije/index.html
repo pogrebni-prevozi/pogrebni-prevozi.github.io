@@ -5,238 +5,356 @@ meta_description: "Pregled svih država iz kojih vršimo prevoz preminulih. Njem
 permalink: /relacije/
 ---
 
+<style>
+    :root {
+        --primary-dark: #1a252f;    
+        --primary-gold: #c5a059;     
+        --text-body: #546e7a;        
+        --bg-light: #f8f9fa;
+        --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+        --card-hover: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Breadcrumbs Modernization */
+    .breadcrumbs {
+        background: #fff;
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
+        font-size: 0.9rem;
+        color: #888;
+    }
+    .breadcrumbs a { color: var(--primary-dark); text-decoration: none; font-weight: 500; }
+
+    /* Hero Section */
+    .hero-minimal {
+        background-color: var(--primary-dark);
+        color: white;
+        padding: 4rem 1rem;
+        text-align: center;
+        border-bottom: 4px solid var(--primary-gold);
+    }
+    
+    .hero-minimal h1 {
+        font-family: 'Playfair Display', serif;  
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+
+    .hero-minimal p {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1rem;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    /* Grid Layout */
+    .country-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 2rem;
+        margin-top: -2rem; /* Overlap effect */
+        padding-bottom: 4rem;
+    }
+
+    /* Modern Card Design */
+    .country-card {
+        background: white;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: var(--card-shadow);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.03);
+        border-left: 4px solid transparent; /* Ready for hover */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        text-decoration: none; /* Removes underline from links */
+        color: inherit;
+    }
+
+    .country-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--card-hover);
+        border-left: 4px solid var(--primary-gold);
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: 1rem;
+    }
+
+    .flag-icon {
+        font-size: 2.2rem;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    .country-name {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        color: var(--primary-dark);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .card-body {
+        font-size: 0.95rem;
+        color: var(--text-body);
+        line-height: 1.6;
+        flex-grow: 1;
+    }
+
+    .card-footer {
+        margin-top: 1.5rem;
+        text-align: right;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--primary-gold);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    .arrow-icon {
+        transition: transform 0.3s ease;
+    }
+    
+    .country-card:hover .arrow-icon {
+        transform: translateX(5px);
+    }
+
+    /* Internal Links Cloud */
+    .link-cloud {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .link-cloud a {
+        display: inline-block;
+        margin: 0.3rem;
+        padding: 0.3rem 0.8rem;
+        background: #f8f9fa;
+        color: #666;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: all 0.2s;
+    }
+    
+    .link-cloud a:hover {
+        background: var(--primary-dark);
+        color: #fff;
+    }
+
+    /* Mobile Sticky Bar */
+    .mobile-sticky {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        padding: 1rem;
+        z-index: 1000;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .btn-call {
+        background: var(--primary-dark);
+        color: white;
+        text-align: center;
+        padding: 0.8rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        flex: 1;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-sticky { display: flex; }
+        .container { padding-bottom: 5rem !important; }  
+        .country-grid { margin-top: 0; }
+    }
+</style>
+
 <div class="breadcrumbs">
-    <div class="breadcrumbs-content">
+    <div class="container">
         <a href="{{ site.baseurl }}/">Početna</a>
-        <span>›</span>
-        <strong>Relacije transporta</strong>
+        <span style="margin: 0 0.5rem; color: #ccc;">›</span>
+        <strong>Relacije</strong>
     </div>
 </div>
 
-<main class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
-    
- 
-    <div style="text-align: center; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
-        <h1 style="font-family: serif; font-size: 2.2rem; margin-bottom: 1.5rem; color: #2c3e50;">Dostojanstven povratak u domovinu</h1>
-        <p style="font-size: 1.05rem; color: #555; max-width: 750px; margin: 0 auto; line-height: 1.8; font-family: sans-serif;">
-            Vršimo profesionalnu repatrijaciju i prevoz preminulih osoba iz svih navedenih evropskih država. 
-            Odaberite zemlju u kojoj se preminula osoba nalazi kako biste saznali detalje o proceduri, 
-            potrebnoj dokumentaciji i organizaciji prevoza.
+<!-- HEADER SECTION -->
+<section class="hero-minimal">
+    <div class="container">
+        <h1>Dostojanstven povratak kući</h1>
+        <p>
+            Profesionalna repatrijacija i prevoz preminulih osoba iz Evropske Unije.
+            <br>Odaberite državu za detalje o proceduri, dokumentaciji i troškovima.
         </p>
     </div>
+</section>
 
+<main class="container">
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
+    <!-- COUNTRY GRID -->
+    <div class="country-grid">
         
         <!-- 1. NJEMAČKA -->
-        <a href="{{ site.baseurl }}/relacije/njemacka/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇩🇪</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">SR Njemačka</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Svakodnevni polasci iz svih pokrajina (Bayern, NRW, Hessen, Berlin). Direktna saradnja sa svim konzulatima u Njemačkoj.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <a href="{{ site.baseurl }}/relacije/njemacka/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇩🇪</span>
+                <h2 class="country-name">Njemačka</h2>
+            </div>
+            <div class="card-body">
+                Svakodnevni polasci iz svih pokrajina (Bayern, NRW, Berlin). Direktna saradnja sa konzulatima u Minhenu i Frankfurtu za brzo dobijanje sprovodnice.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
         <!-- 2. AUSTRIJA -->
-        <a href="{{ site.baseurl }}/relacije/austrija/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇦🇹</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Austrija</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Brza organizacija prevoza iz Beča, Graza, Salzburga i Linza. Rješavanje sanitarne dokumentacije u najkraćem roku.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <a href="{{ site.baseurl }}/relacije/austrija/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇦🇹</span>
+                <h2 class="country-name">Austrija</h2>
+            </div>
+            <div class="card-body">
+                Kompletna logistika iz Beča, Graza, Salzburga i Linza. Rješavanje sanitarne dokumentacije i direktan prevoz bez čekanja.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
         <!-- 3. SLOVENIJA -->
-        <a href="{{ site.baseurl }}/relacije/slovenija/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇸🇮</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Slovenija</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Kao firma sa sjedištem u Ljubljani, garantujemo trenutnu reakciju za prevoz iz bilo kojeg dijela Slovenije.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <a href="{{ site.baseurl }}/relacije/slovenija/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇸🇮</span>
+                <h2 class="country-name">Slovenija</h2>
+            </div>
+            <div class="card-body">
+                <strong>Domaći teren.</strong> Sjedište firme u Ljubljani garantuje najbržu reakciju za prevoz iz bilo kojeg dijela Slovenije prema BiH i Srbiji.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
         <!-- 4. ŠVICARSKA -->
-        <a href="{{ site.baseurl }}/relacije/svicarska/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇨🇭</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Švicarska</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Stručno poznavanje kantonalnih propisa za Zürich, Bern, Basel i Ženevu. Kompletna carinska procedura.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <a href="{{ site.baseurl }}/relacije/svicarska/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇨🇭</span>
+                <h2 class="country-name">Švicarska</h2>
+            </div>
+            <div class="card-body">
+                Stručno poznavanje kantonalnih propisa (Zürich, Bern, Basel, Ženeva). Rješavamo carinsku proceduru i pečatenje kovčega.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
-        <!-- 5. ŠVEDSKA (Skandinavija) -->
-        <a href="{{ site.baseurl }}/relacije/svedska/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇸🇪</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Švedska</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Specijalizovani transport iz Skandinavije (Stockholm, Göteborg, Malmö) sa regulisanim trajektnim prelazima.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <!-- 5. ITALIJA -->
+        <a href="{{ site.baseurl }}/relacije/italija/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇮🇹</span>
+                <h2 class="country-name">Italija</h2>
+            </div>
+            <div class="card-body">
+                Prevoz iz sjeverne Italije (Trst, Venecija, Milano) i južnih regija. Saradnja sa italijanskim sanitarnim inspektorima.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
-        <!-- 6. ITALIJA -->
-        <a href="{{ site.baseurl }}/relacije/italija/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇮🇹</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Italija</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Pokrivamo sjevernu Italiju (Trst, Venecija, Milano) kao i centralne i južne regije. Poznavanje jezika i administracije.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <!-- 6. ŠVEDSKA -->
+        <a href="{{ site.baseurl }}/relacije/svedska/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇸🇪</span>
+                <h2 class="country-name">Švedska</h2>
+            </div>
+            <div class="card-body">
+                Specijalizovani transport iz Skandinavije. Organizacija trajektnog prelaza i kompletna papirologija u ambasadi.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
         <!-- 7. FRANCUSKA -->
-        <a href="{{ site.baseurl }}/relacije/francuska/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇫🇷</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Francuska</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Prevoz iz Pariza, Lyona, Marseillea i ostalih gradova. Kompletna koordinacija sa francuskim institucijama.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <a href="{{ site.baseurl }}/relacije/francuska/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇫🇷</span>
+                <h2 class="country-name">Francuska</h2>
+            </div>
+            <div class="card-body">
+                Prevoz iz Pariza, Lyona i Marseillea. Poznavanje jezika i administrativnih zahtjeva francuskih opština.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
         <!-- 8. HOLANDIJA -->
-        <a href="{{ site.baseurl }}/relacije/holandija/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇳🇱</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Holandija</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Transport preminulih iz Amsterdama, Rotterdama i cijelog Beneluxa. Efikasna procedura pribavljanja Leichenpass-a.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+        <a href="{{ site.baseurl }}/relacije/holandija/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇳🇱</span>
+                <h2 class="country-name">Holandija</h2>
+            </div>
+            <div class="card-body">
+                Transport iz Amsterdama, Rotterdama i regije Beneluxa. Brza i efikasna organizacija Leichenpass-a.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
-        <!-- 9. HRVATSKA -->
-        <a href="{{ site.baseurl }}/relacije/hrvatska/" style="text-decoration: none; color: inherit;">
-            <div style="background: #fff; border: 1px solid #ddd; transition: all 0.3s ease; height: 100%;"
-                onmouseover="this.style.borderColor='#8b7d6b'; this.style.backgroundColor='#fcfcfc';"
-                onmouseout="this.style.borderColor='#ddd'; this.style.backgroundColor='#fff';">
-                <div style="padding: 2rem; border-bottom: 1px solid #eee;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 2rem;">🇭🇷</span>
-                        <h2 style="font-size: 1.4rem; font-weight: 500; color: #2c3e50; margin: 0; font-family: serif;">Hrvatska</h2>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">
-                        Prevoz preminulih iz svih dijelova Hrvatske (Zagreb, Dalmacija, Slavonija) prema BiH, Srbiji i Crnoj Gori.
-                    </p>
-                </div>
-                <div style="padding: 1rem 2rem; text-align: right;">
-                    <span style="color: #8b7d6b; font-size: 0.9rem;">Detalji procedure &rarr;</span>
-                </div>
+         <!-- 9. HRVATSKA -->
+         <a href="{{ site.baseurl }}/relacije/hrvatska/" class="country-card">
+            <div class="card-header">
+                <span class="flag-icon">🇭🇷</span>
+                <h2 class="country-name">Hrvatska</h2>
+            </div>
+            <div class="card-body">
+                Prevoz iz Zagreba, Dalmacije i Slavonije. Tranzit ili prevoz do konačnog odredišta u regionu.
+            </div>
+            <div class="card-footer">
+                Procedura i detalji <span class="arrow-icon">→</span>
             </div>
         </a>
 
     </div>
 
-  
-    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee;">
-        <p style="font-size: 0.85rem; color: #999; margin-bottom: 1rem; text-align: center;">Česte relacije:</p>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; font-size: 0.8rem; color: #777;">
-            {% for relacija in site.relacije limit:20 %}
-               <a href="{{ site.baseurl }}{{ relacija.url }}" style="color: #777; text-decoration: none;">{{ relacija.title | replace: "Prevoz pokojnika", "" | strip }}</a>
-               {% unless forloop.last %}<span>•</span>{% endunless %}
+    <div class="link-cloud">
+        <h3 style="font-size: 1rem; color: #999; font-weight: 400; margin-bottom: 1rem;">Često tražene relacije</h3>
+        <div>
+            {% for relacija in site.relacije limit:30 %}
+               <a href="{{ site.baseurl }}{{ relacija.url }}">{{ relacija.title | replace: "Prevoz pokojnika", "" | strip }}</a>
             {% endfor %}
         </div>
     </div>
 
-    <!-- KONTAKT -->
-    <div style="background-color: #f8f9fa; padding: 2rem; border-left: 4px solid #2c3e50; margin-top: 4rem;">
-        <div style="max-width: 800px;">
-            <h3 style="font-family: serif; color: #2c3e50; margin-bottom: 0.5rem;">Besplatna konsultacija</h3>
-            <p style="color: #666; margin-bottom: 1.5rem;">
-                Dežurni telefon dostupan 24/7 za sva pitanja i hitne slučajeve.
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-                <a href="tel:{{ site.phone }}" style="color: #2c3e50; text-decoration: none; font-weight: 600; font-size: 1.1rem;">
-                    📞 {{ site.phone_display }}
-                </a>
-                <a href="https://wa.me/{{ site.whatsapp }}" style="color: #2c3e50; text-decoration: none; font-weight: 600;">
-                    💬 WhatsApp
-                </a>
-            </div>
-        </div>
-    </div>
-
 </main>
+
+<div class="mobile-sticky">
+    <a href="tel:{{ site.phone }}" class="btn-call">📞 Pozovite Odmah</a>
+    <a href="https://wa.me/{{ site.whatsapp }}" class="btn-call" style="background: #25D366;">💬 WhatsApp</a>
+</div>
