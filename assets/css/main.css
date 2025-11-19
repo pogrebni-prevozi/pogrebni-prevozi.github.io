@@ -97,7 +97,7 @@ header {
     max-height: 35px; 
     width: auto;
     
-    opacity: 0.1; 
+    opacity: 0.8; 
     border-radius: 4px;
 }
 /* ---------------------------------- */
@@ -574,3 +574,4 @@ footer {
         padding: 0.8rem 1.5rem;
     }
 }
+
