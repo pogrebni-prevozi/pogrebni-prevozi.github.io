@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /temp/
+Disallow: /admin/
+Crawl-delay: 5
+
+Sitemap: https://pogrebni-prevozi.github.io/sitemap.xml
