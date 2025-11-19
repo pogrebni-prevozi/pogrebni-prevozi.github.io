@@ -1,21 +1,21 @@
 ---
 layout: relacija
-title: "Cijena prevoza umrlih Koper - Mostar | Međunarodni prevoz"
-meta_description: "Profesionalan prevoz umrlih i transport pokojnika iz Kopra u Mostar. Sigurna usluga, sređivanje dokumentacije. Dostupni 24/7."
-canonical_url: "/relacije/slovenija/koper-mostar/"
-date: "2025-11-17"
+title: "Transport pokojnika iz Celja za Split - 24/7"
+meta_description: "Profesionalan prevoz umrlih i transport pokojnika iz Celja u Split. Sigurna usluga, sređivanje dokumentacije. Dostupni 24/7."
+canonical_url: "/relacije/slovenija/celje-split/"
+date: "2025-11-12"
 
-primary_keyword: "prevoz pokojnika iz koper u mostar"
-secondary_keywords: "prevoz umrlih koper, transport pokojnih mostar, prevoz posmrtnih ostataka Slovenija"
+primary_keyword: "prevoz posmrtnih ostataka celje split"
+secondary_keywords: "prevoz umrlih celje, transport pokojnih split, prevoz posmrtnih ostataka Slovenija"
 
-polaziste: "Koper"
+polaziste: "Celje"
 polaziste_drzava: "Slovenija"
 polaziste_flag: "🇸🇮"
-odrediste: "Mostar"
-odrediste_drzava: "Bosna i Hercegovina"
-odrediste_flag: "🇧🇦"
-udaljenost_km: "750"
-trajanje_h: "8-10"
+odrediste: "Split"
+odrediste_drzava: "Hrvatska"
+odrediste_flag: "🇭🇷"
+udaljenost_km: "600"
+trajanje_h: "7-8"
 
 parent_page:
   title: "Slovenija"
@@ -28,7 +28,7 @@ parent_page:
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Prevoz pokojnika iz Kopra za Mostar",
+    "name": "Prevoz pokojnika iz Celja za Split",
     "provider": {
       "@type": "ProfessionalService",
       "name": "Pogrebne Usluge Edit Aljić",
@@ -41,15 +41,15 @@ parent_page:
       }
     },
     "areaServed": [
-      { "@type": "City", "name": "Koper" },
-      { "@type": "City", "name": "Mostar" }
+      { "@type": "City", "name": "Celje" },
+      { "@type": "City", "name": "Split" }
     ],
     "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
         "reviewCount": "142"
     },
-    "description": "Profesionalan i dostojanstven prevoz pokojnika i umrlih lica iz Kopra u Mostar.",
+    "description": "Profesionalan i dostojanstven prevoz pokojnika i umrlih lica iz Celja u Split.",
     "serviceType": "International Funeral Transport"
   },
   {
@@ -77,7 +77,7 @@ parent_page:
       {
         "@type": "ListItem",
         "position": 4,
-        "name": "Koper - Mostar"
+        "name": "Celje - Split"
       }
     ]
   },
@@ -87,10 +87,10 @@ parent_page:
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Koliko košta prevoz pokojnika iz Kopra?",
+        "name": "Koliko košta prevoz pokojnika iz Celja?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Cijena prevoza pokojnika iz Kopra zavisi od tačne kilometraže, putarina i troškova dokumentacije. Kontaktirajte nas za besplatnu procjenu."
+          "text": "Cijena prevoza pokojnika iz Celja zavisi od tačne kilometraže, putarina i troškova dokumentacije. Kontaktirajte nas za besplatnu procjenu."
         }
       },
       {
@@ -103,10 +103,10 @@ parent_page:
       },
       {
         "@type": "Question",
-        "name": "Koliko traje transport iz Kopra za Mostar?",
+        "name": "Koliko traje transport iz Celja za Split?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Transport obično traje između 8-10 sati, zavisno od gužve na graničnim prelazima."
+          "text": "Transport obično traje između 7-8 sati, zavisno od gužve na graničnim prelazima."
         }
       }
     ]
@@ -115,8 +115,8 @@ parent_page:
 </script>
 
 <div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Kopra za Mostar</h2>
-    <p>Vršimo profesionalan <strong>međunarodni prevoz pokojnika</strong> na relaciji Koper - Mostar sa kompletnom dokumentacijom.</p>
+    <h2>Profesionalan prevoz umrlih iz Celja za Split</h2>
+    <p>Organizacija <strong>prevoza pokojnika iz Celja</strong> zahtijeva brzinu i poznavanje propisa. Mi smo tu da vam olakšamo.</p>
 
     <p>Sa višegodišnjim iskustvom u međunarodnom transportu, garantujemo dostojanstven i siguran prevoz posmrtnih ostataka. Naš tim je dostupan <strong>24 sata dnevno, 7 dana u sedmici</strong> za sve informacije i hitne polaske.</p>
 
@@ -126,27 +126,27 @@ parent_page:
 
 <div class="info-box" style="background-color: #f0f8ff; border-left: 5px solid #007bff; padding: 15px; margin: 20px 0; border-radius: 5px;">
     <h4>💡 Savjet iz prakse:</h4>
-    <p>Savjet iz prakse: Pripremite odjeću za pokojnika (odijelo, cipele) prije našeg dolaska kako bi procedura opremanja tekla brže.</p>
+    <p>Preporuka: Obavijestite rodbinu o planiranom vremenu dolaska tek nakon što mi potvrdimo prelazak svih granica, zbog mogućih zadržavanja.</p>
     <p style="font-size:0.9em; margin-top:5px;"><em>- Tim Pogrebne Usluge Edit Aljić</em></p>
 </div>
 
 <div class="content-section">
-    <h2>Detalji transporta: Koper - Mostar</h2>
-    <p>Pregled rute i trajanja transporta za relaciju Koper - Mostar:</p>
+    <h2>Detalji transporta: Celje - Split</h2>
+    <p>Pregled rute i trajanja transporta za relaciju Celje - Split:</p>
 
     <!-- HTML TABELA ZA FEATURED SNIPPET -->
     <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
         <tr style="background-color: #f8f9fa;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Relacija</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Koper (🇸🇮) ↔ Mostar (🇧🇦)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Celje (🇸🇮) ↔ Split (🇭🇷)</td>
         </tr>
         <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Udaljenost</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">~750 km</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">~600 km</td>
         </tr>
         <tr style="background-color: #f8f9fa;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Trajanje puta</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">8-10 sati (prosječno)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">7-8 sati (prosječno)</td>
         </tr>
         <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Usluga</strong></td>
@@ -159,18 +159,18 @@ parent_page:
     <h2>Često postavljana pitanja (FAQ)</h2>
 
     <div class="faq-item" style="margin-bottom: 15px;">
-        <div class="faq-question" style="font-weight: bold;">Kolika je cijena prevoza umrlih iz Kopra?</div>
-        <div class="faq-answer">Cijena prevoza pokojnika iz Kopra zavisi od tačne udaljenosti i specifičnih zahtjeva. Kontaktirajte nas za besplatnu i tačnu procjenu troškova.</div>
+        <div class="faq-question" style="font-weight: bold;">Kolika je cijena prevoza umrlih iz Celja?</div>
+        <div class="faq-answer">Cijena prevoza pokojnika iz Celja zavisi od tačne udaljenosti i specifičnih zahtjeva. Kontaktirajte nas za besplatnu i tačnu procjenu troškova.</div>
     </div>
 
     <div class="faq-item" style="margin-bottom: 15px;">
-        <div class="faq-question" style="font-weight: bold;">Koja dokumenta su potrebna za transport pokojnih u Bosnu i Hercegovinu?</div>
-        <div class="faq-answer">Za prevoz u Bosnu i Hercegovinu su potrebni pasoš umrlog, potvrda o smrti i sprovodnica. Mi završavamo svu papirologiju u Kopru za vas.</div>
+        <div class="faq-question" style="font-weight: bold;">Koja dokumenta su potrebna za transport pokojnih u Hrvatsku?</div>
+        <div class="faq-answer">Za prevoz u Hrvatsku su potrebni pasoš umrlog, potvrda o smrti i sprovodnica. Mi završavamo svu papirologiju u Celju za vas.</div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question" style="font-weight: bold;">Vršite li prevoz i iz drugih gradova Slovenije?</div>
-        <div class="faq-answer">Da, pokrivamo cijelu teritoriju. Vršimo i <a href="/relacije/slovenija/" style="color:#d4af37;">prevoz pokojnika iz okolnih gradova kao što su: <a href='/relacije/slovenija/'>Ljubljana</a>, <a href='/relacije/slovenija/'>Maribor</a>, <a href='/relacije/slovenija/'>Celje</a></a>.</div>
+        <div class="faq-answer">Da, pokrivamo cijelu teritoriju. Vršimo i <a href="/relacije/slovenija/" style="color:#d4af37;">prevoz pokojnika iz okolnih gradova kao što su: <a href='/relacije/slovenija/'>Ljubljana</a>, <a href='/relacije/slovenija/'>Maribor</a>, <a href='/relacije/slovenija/'>Koper</a></a>.</div>
     </div>
 </div>
 

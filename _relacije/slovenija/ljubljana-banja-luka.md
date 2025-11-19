@@ -1,10 +1,12 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Ljubljane u Banju Luku"
-meta_description: "Prevoz pokojnika iz Ljubljane u Banju Luku - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+title: "Cijena prevoza umrlih Ljubljana - Banja Luka | Međunarodni prevoz"
+meta_description: "Profesionalan prevoz umrlih i transport pokojnika iz Ljubljane u Banju Luku. Sigurna usluga, sređivanje dokumentacije. Dostupni 24/7."
 canonical_url: "/relacije/slovenija/ljubljana-banja-luka/"
+date: "2025-11-14"
 
 primary_keyword: "prevoz pokojnika iz ljubljana u banja luka"
+secondary_keywords: "prevoz umrlih ljubljana, transport pokojnih banja luka, prevoz posmrtnih ostataka Slovenija"
 
 polaziste: "Ljubljana"
 polaziste_drzava: "Slovenija"
@@ -12,58 +14,164 @@ polaziste_flag: "🇸🇮"
 odrediste: "Banja Luka"
 odrediste_drzava: "Bosna i Hercegovina"
 odrediste_flag: "🇧🇦"
-udaljenost_km: "420"
-trajanje_h: "4-5"
+udaljenost_km: "580"
+trajanje_h: "6-7"
 
 parent_page:
   title: "Slovenija"
   url: "/relacije/slovenija/"
 ---
 
-<div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Ljubljane u Bosnu i Hercegovinu</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Ljubljane u Banju Luku</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
-    
-    <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
+<!-- SCHEMA.ORG JSON-LD (SERVICE + BREADCRUMB + FAQ + RATING) -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Prevoz pokojnika iz Ljubljane za Banju Luku",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Pogrebne Usluge Edit Aljić",
+      "telephone": "+386 70 443 005",
+      "priceRange": "$$",
+      "image": "https://edit-aljic.com/assets/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SI"
+      }
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Ljubljana" },
+      { "@type": "City", "name": "Banja Luka" }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "142"
+    },
+    "description": "Profesionalan i dostojanstven prevoz pokojnika i umrlih lica iz Ljubljane u Banju Luku.",
+    "serviceType": "International Funeral Transport"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Početna",
+        "item": "https://edit-aljic.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Relacije",
+        "item": "https://edit-aljic.com/relacije/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Slovenija",
+        "item": "https://edit-aljic.com/relacije/slovenija/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Ljubljana - Banja Luka"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Koliko košta prevoz pokojnika iz Ljubljane?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cijena prevoza pokojnika iz Ljubljane zavisi od tačne kilometraže, putarina i troškova dokumentacije. Kontaktirajte nas za besplatnu procjenu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Koja dokumenta su potrebna za prevoz iz Slovenije?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Potrebni su: Pasoš preminulog, Potvrda o smrti (Todesbescheinigung/Death Certificate), Sprovodnica iz konzulata i Potvrda o grobnom mjestu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Koliko traje transport iz Ljubljane za Banju Luku?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Transport obično traje između 6-7 sati, zavisno od gužve na graničnim prelazima."
+        }
+      }
+    ]
+  }
+]
+</script>
 
-    <h3>Šta obuhvata naša usluga?</h3>
-    <ul>
-        <li>Preuzimanje pokojnika u Ljubljani i okolini</li>
-        <li>Kompletan prevoz iz Ljubljane u Banju Luku</li>
-        <li>Priprema svih potrebnih dokumenata</li>
-        <li>Leichenpass (transportni pasoš za umrle)</li>
-        <li>Sprovodnica iz konzulata</li>
-        <li>Koordinacija sa svim institucijama</li>
-        <li>Transport u dostojanstvenim uslovima</li>
-        <li>Isporuka na željenu adresu</li>
-    </ul>
+<div class="content-section">
+    <h2>Profesionalan prevoz umrlih iz Ljubljane za Banju Luku</h2>
+    <p>Vršimo profesionalan <strong>međunarodni prevoz pokojnika</strong> na relaciji Ljubljana - Banja Luka sa kompletnom dokumentacijom.</p>
+
+    <p>Sa višegodišnjim iskustvom u međunarodnom transportu, garantujemo dostojanstven i siguran prevoz posmrtnih ostataka. Naš tim je dostupan <strong>24 sata dnevno, 7 dana u sedmici</strong> za sve informacije i hitne polaske.</p>
+
+    <h3>Šta obuhvata naša usluga prevoza pokojnih?</h3>
+    <ul><li>Dolazak na adresu u Ljubljani</li><li>Rješavanje papirologije</li><li>Siguran transport</li><li>Povoljne cijene</li></ul>
 </div>
 
-<div class="info-box">
-    <h4>⚠️ Važna napomena</h4>
-    <p>Za prevoz pokojnika potrebno je pribaviti određenu dokumentaciju. Mi preuzimamo svu komunikaciju sa institucijama.</p>
+<div class="info-box" style="background-color: #f0f8ff; border-left: 5px solid #007bff; padding: 15px; margin: 20px 0; border-radius: 5px;">
+    <h4>💡 Savjet iz prakse:</h4>
+    <p>Preporuka: Obavijestite rodbinu o planiranom vremenu dolaska tek nakon što mi potvrdimo prelazak svih granica, zbog mogućih zadržavanja.</p>
+    <p style="font-size:0.9em; margin-top:5px;"><em>- Tim Pogrebne Usluge Edit Aljić</em></p>
 </div>
 
 <div class="content-section">
-    <h2>Transport Ljubljana - Banja Luka</h2>
-    <p>Ukupna udaljenost je približno <strong>420 kilometara</strong>, a transport traje između <strong>4-5 sati</strong> zavisno od graničnih prelaza.</p>
+    <h2>Detalji transporta: Ljubljana - Banja Luka</h2>
+    <p>Pregled rute i trajanja transporta za relaciju Ljubljana - Banja Luka:</p>
+
+    <!-- HTML TABELA ZA FEATURED SNIPPET -->
+    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background-color: #f8f9fa;">
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Relacija</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Ljubljana (🇸🇮) ↔ Banja Luka (🇧🇦)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Udaljenost</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">~580 km</td>
+        </tr>
+        <tr style="background-color: #f8f9fa;">
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Trajanje puta</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">6-7 sati (prosječno)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Usluga</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Prevoz pokojnika / Prevoz umrlih</td>
+        </tr>
+    </table>
 </div>
 
 <div class="content-section">
-    <h2>Često postavljana pitanja</h2>
-    
-    <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Ljubljane u Banju Luku?</div>
-        <div class="faq-answer">Transport traje između 4-5 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+    <h2>Često postavljana pitanja (FAQ)</h2>
+
+    <div class="faq-item" style="margin-bottom: 15px;">
+        <div class="faq-question" style="font-weight: bold;">Kolika je cijena prevoza umrlih iz Ljubljane?</div>
+        <div class="faq-answer">Cijena prevoza pokojnika iz Ljubljane zavisi od tačne udaljenosti i specifičnih zahtjeva. Kontaktirajte nas za besplatnu i tačnu procjenu troškova.</div>
+    </div>
+
+    <div class="faq-item" style="margin-bottom: 15px;">
+        <div class="faq-question" style="font-weight: bold;">Koja dokumenta su potrebna za transport pokojnih u Bosnu i Hercegovinu?</div>
+        <div class="faq-answer">Za prevoz u Bosnu i Hercegovinu su potrebni pasoš umrlog, potvrda o smrti i sprovodnica. Mi završavamo svu papirologiju u Ljubljani za vas.</div>
     </div>
 
     <div class="faq-item">
-        <div class="faq-question">Da li je potrebno da porodica ide sa transportom?</div>
-        <div class="faq-answer">Ne, nije potrebno. Naši profesionalni vozači vode cijeli transport. Vi ostajete u kontaktu sa nama tokom cijelog puta.</div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">Da li radite vikendom i praznicima?</div>
-        <div class="faq-answer">Da, dostupni smo 24 sata dnevno, 7 dana u sedmici, uključujući vikende i praznike.</div>
+        <div class="faq-question" style="font-weight: bold;">Vršite li prevoz i iz drugih gradova Slovenije?</div>
+        <div class="faq-answer">Da, pokrivamo cijelu teritoriju. Vršimo i <a href="/relacije/slovenija/" style="color:#d4af37;">prevoz pokojnika iz okolnih gradova kao što su: <a href='/relacije/slovenija/'>Maribor</a>, <a href='/relacije/slovenija/'>Koper</a>, <a href='/relacije/slovenija/'>Celje</a></a>.</div>
     </div>
 </div>
+
+<!-- LOKALIZOVAN SADRŽAJ (NA JEZIKU DRŽAVE POLAZIŠTA) -->
