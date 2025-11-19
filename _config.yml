@@ -11,7 +11,6 @@ website: https://pogrebne-storitve-aljic.eu
 facebook: https://facebook.com/storitve.aljic
 whatsapp: "38670443005"
 viber: "38670443005"
-main_site_url: https://pogrebni-prevozi.github.io
 
 # Company Info
 company_name: Pogrebni prevozi Edit Aljić S.P.
@@ -22,7 +21,6 @@ established_year: 2008
 lang: bs
 locale: bs_BA
 author: Pogrebni prevozi Edit Aljić
-social_image: /assets/images/default-social-share.jpg
 
 # Google Analytics
 google_analytics: G-7WMZFXTWKP
@@ -32,14 +30,7 @@ markdown: kramdown
 permalink: pretty
 timezone: Europe/Sarajevo
 
-# Plugins for SEO and Performance
-plugins:
-  - jekyll-seo-tag
-  - jekyll-minifier
-  - jekyll-sitemap
-  - jekyll-last-modified-at
-
-# Exclude from processing - critical for clean build and SEO
+# Exclude from processing
 exclude:
   - README.md
   - Gemfile
@@ -49,5 +40,42 @@ exclude:
   - .git
   - .gitignore
   - generate_routes.py
-  - _site
-  - .sass-cache
+
+# Include
+include:
+  - _pages
+
+# Collections
+collections:
+  relacije:
+    output: true
+    permalink: /relacije/:path/
+
+# Defaults
+defaults:
+  # Pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  
+  # Relacije
+  - scope:
+      path: ""
+      type: relacije
+    values:
+      layout: relacija
+      author: Edit Aljić
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO Tag Settings
+social:
+  name: Pogrebni prevozi Edit Aljić
+  links:
+    - https://facebook.com/storitve.aljic
+    - https://pogrebne-storitve-aljic.eu
