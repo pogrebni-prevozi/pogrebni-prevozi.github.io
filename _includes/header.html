@@ -11,28 +11,27 @@
 <div class="header-content">
 <a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
 
-  
-    <div class="header-logo-image">
-        <img src="{{ site.baseurl }}/assets/images/logo.png" alt="Logo pogrebni prevoz" />
-    </div>
-    
-    
-    <!-- Desktop Navigation -->
-    <nav id="mainNav">
-        <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Početna</a>
-        <a href="{{ site.baseurl }}/procedura/" {% if page.url == "/procedura/" %}class="active"{% endif %}>Procedura</a>
-        <a href="{{ site.baseurl }}/kontakt/" {% if page.url == "/kontakt/" %}class="active"{% endif %}>Kontakt</a>
-    </nav>
-    
-    <!-- Mobile Text Navigation -->
-    <div class="mobile-nav-icons">
-        <a href="{{ site.baseurl }}/" title="Početna" aria-label="Početna">Početna</a>
-        
-        <a href="{{ site.baseurl }}/procedura/" title="Procedura" aria-label="Procedura">Procedura</a>
-        <a href="{{ site.baseurl }}/kontakt/" title="Kontakt" aria-label="Kontakt">Kontakt</a>
-    </div>
+
+<div class="header-logo-image">
+<img src="{{ site.baseurl }}/assets/images/logo.png" alt="Logo pogrebni prevoz" />
 </div>
 
+<!-- Desktop Navigation -->
+
+<nav id="mainNav">
+<a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Početna</a>
+<a href="{{ site.baseurl }}/procedura/" {% if page.url == "/procedura/" %}class="active"{% endif %}>Procedura</a>
+<a href="{{ site.baseurl }}/kontakt/" {% if page.url == "/kontakt/" %}class="active"{% endif %}>Kontakt</a>
+</nav>
+
+<!-- Mobile Text Navigation -->
+
+<div class="mobile-nav-icons">
+<a href="{{ site.baseurl }}/" title="Početna" aria-label="Početna">Početna</a>
+<a href="{{ site.baseurl }}/procedura/" title="Procedura" aria-label="Procedura">Procedura</a>
+<a href="{{ site.baseurl }}/kontakt/" title="Kontakt" aria-label="Kontakt">Kontakt</a>
+
+</div>
+</div>
 
 </header>
-
