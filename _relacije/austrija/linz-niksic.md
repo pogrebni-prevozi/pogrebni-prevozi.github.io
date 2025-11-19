@@ -1,10 +1,11 @@
 ---
 layout: relacija
-title: "Prevoz pokojnika iz Linza u Nikšić"
-meta_description: "Prevoz pokojnika iz Linza u Nikšić - profesionalna usluga dostupna 24/7. Sva dokumentacija, brza realizacija. Pozovite +386 70 443 005"
+title: "Cijena prevoza umrlih Linz - Nikšić | Međunarodni prevoz"
+meta_description: "Profesionalan prevoz umrlih i transport pokojnika iz Linza u Nikšić. Sigurna usluga, sređivanje dokumentacije. Dostupni 24/7."
 canonical_url: "/relacije/austrija/linz-niksic/"
 
 primary_keyword: "prevoz pokojnika iz linz u nikšić"
+secondary_keywords: "prevoz umrlih linz, transport pokojnih nikšić, prevoz posmrtnih ostataka Austrija"
 
 polaziste: "Linz"
 polaziste_drzava: "Austrija"
@@ -20,50 +21,175 @@ parent_page:
   url: "/relacije/austrija/"
 ---
 
-<div class="content-section">
-    <h2>Profesionalan prevoz umrlih iz Linza u Crnu Goru</h2>
-    <p>Nudimo profesionalan <strong>prevoz pokojnika iz Linza u Nikšić</strong> sa kompletnom dokumentacijom i podrškom tokom cijelog procesa. Dostupni smo 24 sata dnevno, 7 dana u sedmici.</p>
-    
-    <p>Sa preko 15 godina iskustva u međunarodnom prevozu pokojnika, razumijemo koliko je ovaj proces težak za porodicu.</p>
+<!-- SCHEMA.ORG JSON-LD (SERVICE + BREADCRUMB + FAQ + RATING) -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Prevoz pokojnika iz Linza za Nikšić",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Pogrebne Usluge Edit Aljić",
+      "telephone": "+386 70 443 005",
+      "priceRange": "$$",
+      "image": "https://edit-aljic.com/assets/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SI"
+      }
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Linz" },
+      { "@type": "City", "name": "Nikšić" }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "127"
+    },
+    "description": "Profesionalan i dostojanstven prevoz pokojnika i umrlih lica iz Linza u Nikšić.",
+    "serviceType": "International Funeral Transport"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Početna",
+        "item": "https://edit-aljic.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Relacije",
+        "item": "https://edit-aljic.com/relacije/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Austrija",
+        "item": "https://edit-aljic.com/relacije/austrija/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Linz - Nikšić"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Koliko košta prevoz pokojnika iz Linza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cijena prevoza pokojnika iz Linza zavisi od tačne kilometraže, putarina i troškova dokumentacije. Kontaktirajte nas za besplatnu procjenu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Koja dokumenta su potrebna za prevoz iz Austrije?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Potrebni su: Pasoš preminulog, Potvrda o smrti (Todesbescheinigung/Death Certificate), Sprovodnica iz konzulata i Potvrda o grobnom mjestu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Koliko traje transport iz Linza za Nikšić?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Transport obično traje između 10-12 sati, zavisno od gužve na graničnim prelazima."
+        }
+      }
+    ]
+  }
+]
+</script>
 
-    <h3>Šta obuhvata naša usluga?</h3>
+<div class="content-section">
+    <h2>Profesionalan prevoz umrlih iz Linza za Nikšić</h2>
+    <p>Organizujemo kompletan <strong>međunarodni prevoz pokojnika</strong> na relaciji Linz - Nikšić. Sa dugogodišnjim iskustvom, garantujemo da će <strong>transport umrlih</strong> proteći bez komplikacija. Vaše je samo da nas pozovete, a mi preuzimamo svu komunikaciju sa bolnicama i institucijama u Linzu.</p>
+    
+    <p>Sa višegodišnjim iskustvom u međunarodnom transportu, garantujemo dostojanstven i siguran prevoz posmrtnih ostataka. Naš tim je dostupan <strong>24 sata dnevno, 7 dana u sedmici</strong> za sve informacije i hitne polaske.</p>
+
+    <h3>Šta obuhvata naša usluga prevoza pokojnih?</h3>
     <ul>
-        <li>Preuzimanje pokojnika u Linzu i okolini</li>
-        <li>Kompletan prevoz iz Linza u Nikšić</li>
-        <li>Priprema svih potrebnih dokumenata</li>
-        <li>Leichenpass (transportni pasoš za umrle)</li>
-        <li>Sprovodnica iz konzulata</li>
-        <li>Koordinacija sa svim institucijama</li>
-        <li>Transport u dostojanstvenim uslovima</li>
-        <li>Isporuka na željenu adresu</li>
+        <li>Dolazak na adresu u Linzu u najkraćem roku (hitne intervencije)</li>
+        <li>Siguran <strong>transport pokojnika</strong> specijalizovanim pogrebnim vozilima</li>
+        <li>Sređivanje 'Sprovodnice' i ostale dokumentacije za prevoz iz Austrije</li>
+        <li>Opremanje pokojnika (sanduk, limeni uložak, tekstil)</li>
+        <li>Organizacija prevoza do Nikšića bez nepotrebnog čekanja</li>
+        <li>Diskrecija i poštovanje prema porodici i preminulom</li>
     </ul>
 </div>
 
 <div class="info-box">
-    <h4>⚠️ Važna napomena</h4>
-    <p>Za prevoz pokojnika potrebno je pribaviti određenu dokumentaciju. Mi preuzimamo svu komunikaciju sa institucijama.</p>
+    <h4>⚠️ Dokumentacija za prevoz umrlih</h4>
+    <p>Za <strong>prevoz pokojnika preko granice</strong> neophodna je međunarodna sprovodnica. Naš tim preuzima kompletnu administrativnu proceduru umjesto vas, štedeći vam vrijeme i snagu. <a href="/relacije/austrija/">Pogledajte sve detalje za Austriju ovdje.</a></p>
 </div>
 
 <div class="content-section">
-    <h2>Transport Linz - Nikšić</h2>
-    <p>Ukupna udaljenost je približno <strong>850 kilometara</strong>, a transport traje između <strong>10-12 sati</strong> zavisno od graničnih prelaza.</p>
+    <h2>Detalji transporta: Linz - Nikšić</h2>
+    <p>Pregled rute i trajanja transporta za relaciju Linz - Nikšić:</p>
+    
+    <!-- HTML TABELA ZA FEATURED SNIPPET -->
+    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background-color: #f8f9fa;">
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Relacija</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Linz (🇦🇹) ↔ Nikšić (🇲🇪)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Udaljenost</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">~850 km</td>
+        </tr>
+        <tr style="background-color: #f8f9fa;">
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Trajanje puta</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">10-12 sati (prosječno)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Usluga</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Prevoz pokojnika / Prevoz umrlih</td>
+        </tr>
+    </table>
 </div>
 
 <div class="content-section">
-    <h2>Često postavljana pitanja</h2>
+    <h2>Često postavljana pitanja (FAQ)</h2>
     
     <div class="faq-item">
-        <div class="faq-question">Koliko traje prevoz pokojnika iz Linza u Nikšić?</div>
-        <div class="faq-answer">Transport traje između 10-12 sati, zavisno od graničnih prelaza i saobraćajne situacije.</div>
+        <div class="faq-question">Kolika je cijena prevoza umrlih iz Linza?</div>
+        <div class="faq-answer">Cijena prevoza pokojnika iz Linza zavisi od tačne udaljenosti i specifičnih zahtjeva. Kontaktirajte nas za besplatnu i tačnu procjenu troškova.</div>
     </div>
 
     <div class="faq-item">
-        <div class="faq-question">Da li je potrebno da porodica ide sa transportom?</div>
-        <div class="faq-answer">Ne, nije potrebno. Naši profesionalni vozači vode cijeli transport. Vi ostajete u kontaktu sa nama tokom cijelog puta.</div>
+        <div class="faq-question">Koja dokumenta su potrebna za transport pokojnih u Crnu Goru?</div>
+        <div class="faq-answer">Za prevoz u Crnu Goru su potrebni pasoš umrlog, potvrda o smrti i sprovodnica. Mi završavamo svu papirologiju u Linzu za vas.</div>
     </div>
-
+    
     <div class="faq-item">
-        <div class="faq-question">Da li radite vikendom i praznicima?</div>
-        <div class="faq-answer">Da, dostupni smo 24 sata dnevno, 7 dana u sedmici, uključujući vikende i praznike.</div>
+        <div class="faq-question">Vršite li prevoz i iz drugih gradova Austrije?</div>
+        <div class="faq-answer">Da, pokrivamo cijelu teritoriju. Vršimo i <a href="/relacije/austrija/">prevoz pokojnika iz okolnih gradova kao što su: Klagenfurt, Beč, Innsbruck</a>.</div>
     </div>
 </div>
+
+<!-- LOKALIZOVAN SADRŽAJ (NA JEZIKU DRŽAVE POLAZIŠTA) -->
+
+    <div class="content-section" style="background-color: #f9f9f9; border-left: 5px solid #d4af37; margin-top: 3rem;">
+        <h3 style="color: #333;">Internationale Leichenüberführung aus Österreich</h3>
+        <p>Wir bieten professionelle Bestattungsdienste und Überführungen von Verstorbenen aus <strong>Linz (Österreich)</strong> nach Bosnien, Serbien, Kroatien, Montenegro und in andere Länder an. Unser Team kümmert sich um die gesamte Dokumentation (Leichenpass, Sterbeurkunde) und den sicheren Transport.</p>
+        <ul>
+            <li><strong>24/7 erreichbar</strong> für Notfälle</li>
+            <li>Erledigung aller administrativen Formalitäten in Linz</li>
+            <li>Sicherer und würdevoller Transport im modernen Bestattungswagen</li>
+            <li>Faire und transparente Preise</li>
+        </ul>
+        <p><strong>Kontaktieren Sie uns (Wir sprechen Deutsch):</strong> <a href="tel:+38670443005">+386 70 443 005</a> (Auch WhatsApp/Viber)</p>
+    </div>
+    
