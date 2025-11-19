@@ -1,7 +1,10 @@
+# Site Settings
 title: Pogrebni prevozi Edit Aljić
 description: Profesionalni međunarodni prevoz pokojnika iz EU u BiH, Srbiju i Crnu Goru. Dostupni 24/7.
 url: https://pogrebni-prevozi.github.io
 baseurl: ""
+
+# Contact Info
 phone: "+386 70 443 005"
 phone_display: "+386 70 443 005"
 website: https://pogrebne-storitve-aljic.eu
@@ -9,22 +12,34 @@ facebook: https://facebook.com/storitve.aljic
 whatsapp: "38670443005"
 viber: "38670443005"
 main_site_url: https://pogrebni-prevozi.github.io
+
+# Company Info
 company_name: Pogrebni prevozi Edit Aljić S.P.
 company_description: Profesionalni međunarodni prevoz pokojnika sa 15+ godina iskustva
 established_year: 2008
+
+# SEO
 lang: bs
 locale: bs_BA
 author: Pogrebni prevozi Edit Aljić
 social_image: /assets/images/default-social-share.jpg
+
+# Google Analytics
 google_analytics: G-7WMZFXTWKP
+
+# Jekyll Settings
 markdown: kramdown
 permalink: pretty
 timezone: Europe/Sarajevo
+
+# Plugins for SEO and Performance
 plugins:
   - jekyll-seo-tag
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-last-modified-at
+
+# Exclude from processing - critical for clean build and SEO
 exclude:
   - README.md
   - Gemfile
