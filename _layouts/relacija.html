@@ -1,287 +1,65 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang }}">
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="breadcrumbs" style="background: #f8f9fa; padding: 1rem 0; border-bottom: 1px solid #eee;">
+    <div class="container">
+        <a href="{{ site.baseurl }}/">Početna</a> › 
+        <a href="{{ site.baseurl }}/relacije/">Relacije</a> › 
+        <strong>{{ page.title }}</strong>
+    </div>
+</div>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="{{ page.meta_description }}">
-    <title>{{ page.title }} | {{ site.title }}</title>
+<section style="padding: 4rem 1rem;">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h1 style="color: var(--premium-dark); margin-bottom: 1.5rem;">{{ page.title }}</h1>
+            
+            <div style="background: #fff; padding: 2rem; border-left: 4px solid var(--premium-gold); box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 2rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                    Tražite pouzdan <strong>prevoz pokojnika</strong> na relaciji <strong>{{ page.title }}</strong>?
+                    Pogrebno preduzeće Edit Aljić nudi kompletnu organizaciju transporta umrlih.
+                </p>
+                <p>
+                    Naš tim preuzima brigu o cjelokupnoj dokumentaciji (Sprovodnica, Leichenpass, Sanitarna dozvola) 
+                    kako bi se tijelo preminulog dostojanstveno i sigurno prevezlo do mjesta ukopa.
+                </p>
+            </div>
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.canonical_url }}">
+            <h2 style="font-size: 1.5rem; margin-top: 3rem;">Šta uključuje naša usluga?</h2>
+            <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                    ✅ <strong>Brz dolazak:</strong> Odmah po pozivu krećemo na adresu.
+                </li>
+                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                    ✅ <strong>Administracija:</strong> Rješavamo papire u opštinama i konzulatima.
+                </li>
+                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                    ✅ <strong>Oprema:</strong> Obezbjeđujemo svu potrebnu pogrebnu opremu (sanduke, limene uloške).
+                </li>
+                <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                    ✅ <strong>Prevoz:</strong> Specijalna klimatizovana vozila.
+                </li>
+            </ul>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.meta_description }}">
-    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:type" content="website">
-
-    <!-- Schema.org for Route -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "{{ page.title }}",
-      "description": "{{ page.meta_description }}",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "{{ site.company_name }}",
-        "telephone": "{{ site.phone }}",
-        "url": "{{ site.website }}"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "{{ page.polaziste }}",
-          "containedIn": { "@type": "Country", "name": "{{ page.polaziste_drzava }}" }
-        },
-        {
-          "@type": "City",
-          "name": "{{ page.odrediste }}",
-          "containedIn": { "@type": "Country", "name": "{{ page.odrediste_drzava }}" }
-        }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    </script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-
-    <style>
-        /* Additional styles for route pages */
-        .route-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 2px solid var(--gold);
-        }
-
-        .route-meta {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .route-meta-item {
-            text-align: center;
-        }
-
-        .route-meta-label {
-            font-size: 0.85rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-
-        .route-meta-value {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--primary);
-        }
-
-        .cta-box {
-            background: var(--gold);
-            color: var(--white);
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            border-left: 4px solid var(--primary);
-        }
-
-        .cta-box h3 {
-            margin-bottom: 1rem;
-            font-weight: 400;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .content-section {
-            margin: 3rem 0;
-        }
-
-        .content-section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-            font-weight: 400;
-            border-left: 4px solid var(--gold);
-            padding-left: 1rem;
-        }
-
-        .content-section h3 {
-            font-size: 1.3rem;
-            margin: 2rem 0 1rem;
-            color: var(--secondary);
-            font-weight: 500;
-        }
-
-        .content-section p {
-            margin-bottom: 1rem;
-            font-size: 1.05rem;
-        }
-
-        .content-section ul {
-            margin-left: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .content-section li {
-            margin-bottom: 0.7rem;
-            font-size: 1.05rem;
-        }
-
-        .info-box {
-            background: var(--light);
-            border-left: 4px solid var(--gold);
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .related-routes {
-            background: var(--light);
-            padding: 2rem;
-            margin: 3rem 0;
-        }
-
-        .related-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .related-card {
-            background: var(--white);
-            padding: 1.5rem;
-            border: 1px solid var(--border);
-            text-decoration: none;
-            color: var(--text);
-            transition: all 0.3s;
-        }
-
-        .related-card:hover {
-            border-color: var(--gold);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .related-card h3 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .faq-item {
-            margin-bottom: 2rem;
-        }
-
-        .faq-question {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 0.7rem;
-        }
-    </style>
-</head>
-
-<body>
-    {% include header.html %}
-
-    <div class="breadcrumbs">
-        <div class="breadcrumbs-content">
-            <a href="{{ site.baseurl }}/">Početna</a>
-            <span>›</span>
-            <a href="{{ site.baseurl }}/relacije/">Relacije</a>
-            {% if page.parent_page %}
-            <span>›</span>
-            <a href="{{ site.baseurl }}{{ page.parent_page.url }}">{{ page.parent_page.title }}</a>
-            {% endif %}
-            <span>›</span>
-            <strong>{{ page.title }}</strong>
+            <div style="background: var(--premium-dark); color: white; padding: 2rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">Zatražite cijenu prevoza</h3>
+                <p style="margin-bottom: 1.5rem;">Dostupni smo 24/7 za besplatnu konsultaciju.</p>
+                <a href="tel:{{ site.phone }}" style="display: inline-block; background: var(--premium-gold); color: white; padding: 1rem 2rem; font-weight: bold; text-decoration: none; border-radius: 4px;">
+                    📞 POZOVITE: {{ site.phone_display }}
+                </a>
+            </div>
+            
+            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+                <h4>Pogledajte i druge relacije:</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1rem;">
+                    {% for rel in site.relacije limit:10 %}
+                        <a href="{{ site.baseurl }}{{ rel.url }}" style="font-size: 0.9rem; color: #666; background: #f8f9fa; padding: 5px 10px; border-radius: 4px;">
+                            {{ rel.title | replace: "Prevoz pokojnika", "" }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
-
-    <main class="container">
-        <div class="route-header">
-            <h1>{{ page.title }}</h1>
-            <div class="route-meta">
-                <div class="route-meta-item">
-                    <span class="route-meta-label">Polazište</span>
-                    <span class="route-meta-value">{{ page.polaziste_flag }} {{ page.polaziste }}, {{
-                        page.polaziste_drzava }}</span>
-                </div>
-                <div class="route-meta-item">
-                    <span class="route-meta-label">Odredište</span>
-                    <span class="route-meta-value">{{ page.odrediste_flag }} {{ page.odrediste }}, {{
-                        page.odrediste_drzava }}</span>
-                </div>
-                {% if page.udaljenost_km %}
-                <div class="route-meta-item">
-                    <span class="route-meta-label">Udaljenost</span>
-                    <span class="route-meta-value">~{{ page.udaljenost_km }} km</span>
-                </div>
-                {% endif %}
-                {% if page.trajanje_h %}
-                <div class="route-meta-item">
-                    <span class="route-meta-label">Trajanje</span>
-                    <span class="route-meta-value">{{ page.trajanje_h }}h</span>
-                </div>
-                {% endif %}
-            </div>
-        </div>
-
-        <div class="cta-box">
-            <h3>Dostupni smo 24 sata dnevno, 7 dana u sedmici</h3>
-            <p>Za sve informacije o prevozu pokojnika, pozovite nas odmah</p>
-            <div class="cta-buttons">
-                <a href="tel:{{ site.phone }}" class="cta-btn">📞 Pozovite {{ site.phone_display }}</a>
-                <a href="https://wa.me/{{ site.whatsapp }}" class="cta-btn secondary">💬 WhatsApp</a>
-            </div>
-        </div>
-
-        {{ content }}
-
-        {% if page.related_routes and page.related_routes.size > 0 %}
-        <div class="related-routes">
-            <h2 style="border-left: none; padding-left: 0;">Slične Relacije</h2>
-            <div class="related-grid">
-                {% for route in page.related_routes %}
-                <a href="{{ site.baseurl }}{{ route.url }}" class="related-card">
-                    <h3>{{ route.title }}</h3>
-                    <p style="font-size: 0.9rem; color: var(--accent);">{{ route.description }}</p>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-
-        <div class="cta-box" style="margin-top: 3rem;">
-            <h3>Potreban vam je prevoz pokojnika?</h3>
-            <p>Kontaktirajte nas odmah - dostupni smo 24/7 za sve informacije i hitne slučajeve</p>
-            <div class="cta-buttons">
-                <a href="tel:{{ site.phone }}" class="cta-btn">📞 {{ site.phone_display }}</a>
-                <a href="https://wa.me/{{ site.whatsapp }}" class="cta-btn secondary">💬 WhatsApp</a>
-                <a href="viber://chat?number={{ site.viber }}" class="cta-btn secondary">Viber</a>
-            </div>
-        </div>
-    </main>
-
-    {% include footer.html %}
-</body>
-
-</html>
+</section>
