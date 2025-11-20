@@ -1,36 +1,148 @@
 ---
 layout: default
-title: "Stranica Nije Pronađena"
+title: "Stranica nije dostupna | Pogrebni prevozi Edit Aljić"
 permalink: /404.html
 ---
 
-<main class="container" style="padding: 6rem 2rem; text-align: center;">
-    <div style="max-width: 600px; margin: 0 auto;">
-        <h1 style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;">404</h1>
-        <h2 style="font-size: 1.8rem; color: var(--accent); margin-bottom: 2rem; font-weight: 400;">
-            Stranica nije pronađena
-        </h2>
-        
-        <p style="font-size: 1.1rem; color: var(--text); margin-bottom: 3rem; line-height: 1.7;">
-            Tražena stranica ne postoji ili je uklonjena.<br>
-            Molimo vas da provjerite URL adresu ili se vratite na početnu stranicu.
-        </p>
+<style>
+    :root {
+        --premium-dark: #1a252f;
+        --premium-gold: #c5a059;
+        --text-grey: #546e7a;
+        --bg-light: #f8f9fa;
+    }
 
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-            <a href="{{ site.baseurl }}/" class="cta-btn" style="background: var(--primary); color: var(--white); border-color: var(--primary);">
-                Početna stranica
-            </a>
-            <a href="{{ site.baseurl }}/relacije/" class="cta-btn" style="background: var(--gold); color: var(--white); border-color: var(--gold);">
-                Sve relacije
-            </a>
-        </div>
+    .error-page-container {
+        padding: 8rem 2rem;
+        text-align: center;
+        background-color: #fff;
+        min-height: 70vh; /* Da zauzme većinu ekrana */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-        <div style="background: var(--light); padding: 2rem; border-left: 4px solid var(--gold);">
-            <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">Potrebna vam je pomoć?</h3>
-            <p style="margin-bottom: 1rem;">Kontaktirajte nas direktno:</p>
-            <a href="tel:{{ site.phone }}" style="color: var(--gold); text-decoration: none; font-size: 1.2rem; font-weight: 600;">
-                📞 {{ site.phone_display }}
-            </a>
-        </div>
+    .error-code {
+        font-family: 'Playfair Display', serif;
+        font-size: 6rem;
+        color: var(--premium-gold);
+        line-height: 1;
+        margin-bottom: 1rem;
+        opacity: 0.8;
+    }
+
+    .error-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        color: var(--premium-dark);
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+    }
+
+    .error-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1rem;
+        color: var(--text-grey);
+        margin-bottom: 3rem;
+        max-width: 500px;
+        line-height: 1.6;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    .btn-home {
+        background: var(--premium-dark);
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        transition: background 0.3s;
+    }
+    
+    .btn-home:hover {
+        background: #2c3e50;
+    }
+
+    .btn-relacije {
+        border: 1px solid var(--premium-dark);
+        color: var(--premium-dark);
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        transition: all 0.3s;
+    }
+
+    .btn-relacije:hover {
+        background: var(--premium-dark);
+        color: white;
+    }
+
+    .help-box {
+        background: var(--bg-light);
+        padding: 2rem 3rem;
+        border-left: 4px solid var(--premium-gold);
+        text-align: left;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .help-box h3 {
+        color: var(--premium-dark);
+        margin: 0 0 0.5rem 0;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .help-phone {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--premium-dark);
+        text-decoration: none;
+    }
+</style>
+
+<main class="error-page-container">
+    
+    <div class="error-code">404</div>
+    
+    <h1 class="error-title">Stranica nije dostupna</h1>
+    
+    <p class="error-text">
+        Izvinjavamo se, stranica koju tražite je premještena ili više ne postoji. 
+        Molimo Vas da se vratite na početnu stranicu ili nas kontaktirate ako Vam je potrebna hitna pomoć.
+    </p>
+
+    <div class="btn-group">
+        <a href="{{ site.baseurl }}/" class="btn-home">
+            Povratak na početnu
+        </a>
+        <a href="{{ site.baseurl }}/relacije/" class="btn-relacije">
+            Destinacije prevoza
+        </a>
     </div>
+
+    <div class="help-box">
+        <h3>Hitno Vam je potreban prevoz?</h3>
+        <p style="color: #666; margin: 0; font-size: 0.95rem;">Naš dežurni tim je dostupan 24/7:</p>
+        <a href="tel:{{ site.phone }}" class="help-phone">
+            {{ site.phone_display }}
+        </a>
+    </div>
+
 </main>
