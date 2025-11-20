@@ -1,333 +1,105 @@
 ---
 layout: default
 title: "Prevoz Pokojnika | Transport Umrlih iz Inostranstva | Pogrebni Prevozi EU"
-meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostranstva i pogrebni prevozi iz EU u BiH, Srbiju, Crnu Goru. Dostupni 24/7, sva dokumentacija. ☎️ +386 70 443 005"
+meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostranstva i pogrebni prevozi iz EU u BiH, Srbiju, Crnu Goru. Dostupni 24/7, sva dokumentacija."
 ---
 
 <style>
-    :root {
-        --premium-dark: #1a252f;
-        --premium-gold: #c5a059;
-        --premium-light: #f8f9fa;
-        --text-grey: #546e7a;
-    }
-
-    body {
-        font-family: 'Inter', sans-serif;
-        color: #333;
-        line-height: 1.6;
-    }
-    h1, h2, h3 {
-        font-family: 'Playfair Display', serif;
-    }
-
     .hero-premium {
         background: linear-gradient(rgba(26, 37, 47, 0.92), rgba(26, 37, 47, 0.85)), url('{{ site.baseurl }}/assets/vozila/v1.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white;
-        padding: 6rem 1rem; 
-        text-align: center;
-        border-bottom: 4px solid var(--premium-gold);
+        background-size: cover; background-position: center; color: white;
+        padding: 6rem 1rem; text-align: center; border-bottom: 4px solid var(--premium-gold);
     }
-
-    .hero-premium h1 {
-        font-size: 2.2rem; 
-        font-weight: 400;
-        margin-bottom: 1.5rem;
-        line-height: 1.4;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-premium strong {
-        color: var(--premium-gold);
-        font-weight: 600;
-    }
-
-    .hero-subtitle {
-        font-family: 'Inter', sans-serif;
-        font-size: 1.15rem;
-        color: rgba(255,255,255,0.95);
-        max-width: 800px;
-        margin: 0 auto 2.5rem;
-        font-weight: 300;
-        line-height: 1.8;
-    }
-
-    /* Trust Badges */
-    .trust-badges {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        margin-bottom: 2.5rem;
-    }
-    .badge-item {
-        background: rgba(255,255,255,0.1);
-        border: 1px solid rgba(255,255,255,0.2);
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        font-size: 0.9rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    /* Buttons */
-    .btn-premium {
-        display: inline-block;
-        padding: 1rem 2rem;
-        background: var(--premium-gold);
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        border-radius: 2px;
-        transition: all 0.3s;
-        border: 1px solid var(--premium-gold);
-        margin: 0.5rem;
-        font-family: 'Inter', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 0.9rem;
-    }
+    .hero-premium h1 { font-size: 2.2rem; font-weight: 400; margin-bottom: 1.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+    .hero-subtitle { font-size: 1.15rem; color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto 2.5rem; font-weight: 300; }
+    .trust-badges { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .badge-item { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 4px; }
+    .btn-premium { display: inline-block; padding: 1rem 2rem; background: var(--premium-gold); color: white !important; font-weight: 600; border-radius: 2px; margin: 0.5rem; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; transition: 0.3s; }
     .btn-premium:hover { background: #b08d4a; }
     .btn-outline { background: transparent; border: 1px solid white; }
-    .btn-outline:hover { background: white; color: var(--premium-dark); }
-
-    /* PROCESS SECTION */
-    .process-premium { padding: 5rem 1rem; background: white; }
-    .steps-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .step-card {
-        text-align: center;
-        padding: 2rem;
-        border: 1px solid #eee;
-        border-radius: 8px;
-        transition: transform 0.3s;
-    }
-    .step-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        border-color: var(--premium-gold);
-    }
-    .step-number {
-        font-size: 2.5rem;
-        font-family: 'Playfair Display', serif;
-        color: var(--premium-gold);
-        opacity: 0.3;
-        font-weight: 700;
-        display: block;
-    }
-
-    /* COUNTRY LIST */
-    .country-list-section { background: var(--premium-light); padding: 5rem 1rem; }
-    .country-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .country-box {
-        background: white;
-        padding: 2rem;
-        border-left: 4px solid var(--premium-dark);
-        box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-        transition: all 0.3s;
-        text-decoration: none;
-        color: inherit;
-    }
-    .country-box:hover {
-        border-left-color: var(--premium-gold);
-        transform: translateX(5px);
-    }
-    .country-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-    .country-header h3 { margin: 0; color: var(--premium-dark); }
+    .btn-outline:hover { background: white; color: var(--premium-dark) !important; }
     
-    @media (max-width: 768px) {
-        .hero-premium h1 { font-size: 1.6rem; }
-    }
+    /* Kartice za zemlje */
+    .country-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .country-box { background: white; padding: 2rem; border-left: 4px solid var(--premium-dark); box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: 0.3s; display: block; }
+    .country-box:hover { border-left-color: var(--premium-gold); transform: translateX(5px); }
 </style>
 
 <section class="hero-premium">
     <div class="container">
         <h1>Međunarodni Prevoz Pokojnika i<br>Transport Umrlih iz Inostranstva</h1>
-        
         <p class="hero-subtitle">
             Profesionalna, dostojanstvena i brza usluga <strong>prevoza pokojnika</strong>, 
             <strong>transporta umrlih iz inostranstva</strong> i <strong>pogrebnih prevoza</strong> 
             iz EU u BiH, Srbiju i Crnu Goru, kao i <strong>sve druge države Balkana</strong>.
         </p>
-
         <div class="trust-badges">
             <div class="badge-item">🕒 Dostupni 24/7</div>
             <div class="badge-item">📄 Sva dokumentacija</div>
-            <div class="badge-item">🇪🇺 15+ godina iskustva</div>
+            <div class="badge-item">🛡️ 15+ godina iskustva</div>
         </div>
-
         <div>
             <a href="tel:{{ site.phone }}" class="btn-premium">📞 Pozovite Odmah</a>
-            <a href="{{ site.baseurl }}/kontakt/" class="btn-premium btn-outline">Kontakt Informacije</a>
+            <a href="{{ site.baseurl }}/kontakt/" class="btn-premium btn-outline">Kontakt</a>
         </div>
     </div>
 </section>
 
-<!-- PROCESS SECTION -->
-<section class="process-premium">
-    <div class="container">
-        <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; color: var(--premium-dark);">
-            Kako funkcioniše naša usluga prevoza umrlih
-        </h2>
-        
-        <div class="steps-grid">
-            <div class="step-card">
-                <span class="step-number">1</span>
-                <h3 style="color: var(--premium-dark); margin-top: 1rem;">Kontakt</h3>
-                <p style="color: var(--text-grey);">Pozovite nas 24/7 za <strong>prevoz pokojnika</strong>. Odmah organizujemo transport.</p>
-            </div>
-            <div class="step-card">
-                <span class="step-number">2</span>
-                <h3 style="color: var(--premium-dark); margin-top: 1rem;">Dokumentacija</h3>
-                <p style="color: var(--text-grey);">Mi se brinemo o svim dokumentima za <strong>pogrebni prevoz</strong> (Leichenpass, sprovodnice).</p>
-            </div>
-            <div class="step-card">
-                <span class="step-number">3</span>
-                <h3 style="color: var(--premium-dark); margin-top: 1rem;">Transport</h3>
-                <p style="color: var(--text-grey);">Profesionalan <strong>transport umrlih</strong> sa iskusnim vozačima do odredišta.</p>
-            </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="{{ site.baseurl }}/procedura/" style="color: var(--premium-gold); font-weight: 600; text-decoration: none; font-size: 1.1rem;">
-                Detaljnije o proceduri &rarr;
-            </a>
-        </div>
-    </div>
-</section>
-
-<section style="padding: 4rem 0; border-top: 1px solid #eee;">
-    {% include vozni-park.html %}
-</section>
-<section class="country-list-section">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h2 style="color: var(--premium-dark); margin-bottom: 1.5rem;">
-                Prevoz pokojnika i transport umrlih - Sve relacije
-            </h2>
-            <p style="color: var(--text-grey); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
-                Naš <strong>prevoz pokojnika</strong>, <strong>transport umrlih iz inostranstva</strong> i <strong>pogrebni prevozi</strong> 
-                pokrivaju sve evropske zemlje i destinacije na Balkanu. Specijalizovani smo za 
-                <strong>međunarodni transport pokojnika</strong> i <strong>prevoz umrlih iz inostranstva</strong> sa kompletnom dokumentacijom.
-            </p>
-        </div>
-
-        <div class="country-grid">
-            <!-- Njemačka -->
-            <a href="{{ site.baseurl }}/relacije/njemacka/" class="country-box">
-                <div class="country-header">
-                    <span style="font-size: 2rem;">🇩🇪</span>
-                    <h3>Njemačka</h3>
-                </div>
-                <p style="font-size: 0.9rem; color: #666;"><strong>Prevoz pokojnika iz Njemačke</strong>. Berlin, Minhen, Frankfurt, Štutgart.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Njemačke &rarr;</span>
-            </a>
-
-            <!-- Austrija -->
-            <a href="{{ site.baseurl }}/relacije/austrija/" class="country-box">
-                <div class="country-header">
-                    <span style="font-size: 2rem;">🇦🇹</span>
-                    <h3>Austrija</h3>
-                </div>
-                <p style="font-size: 0.9rem; color: #666;"><strong>Pogrebni prevozi iz Austrije</strong>. Beč, Graz, Salzburg, Linz.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Austrije &rarr;</span>
-            </a>
-
-            <!-- Slovenija -->
-            <a href="{{ site.baseurl }}/relacije/slovenija/" class="country-box">
-                <div class="country-header">
-                    <span style="font-size: 2rem;">🇸🇮</span>
-                    <h3>Slovenija</h3>
-                </div>
-                <p style="font-size: 0.9rem; color: #666;"><strong>Transport pokojnika iz Slovenije</strong>. Ljubljana, Maribor, Celje, Koper.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Slovenije &rarr;</span>
-            </a>
-
-            <!-- Švicarska -->
-            <a href="{{ site.baseurl }}/relacije/svicarska/" class="country-box">
-                <div class="country-header">
-                    <span style="font-size: 2rem;">🇨🇭</span>
-                    <h3>Švicarska</h3>
-                </div>
-                <p style="font-size: 0.9rem; color: #666;"><strong>Prevoz pokojnika iz Švicarske</strong>. Zürich, Bern, Basel, Ženeva.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Švicarske &rarr;</span>
-            </a>
-            
-            <!-- Italija -->
-            <a href="{{ site.baseurl }}/relacije/italija/" class="country-box">
-                <div class="country-header">
-                    <span style="font-size: 2rem;">🇮🇹</span>
-                    <h3>Italija</h3>
-                </div>
-                <p style="font-size: 0.9rem; color: #666;"><strong>Pogrebni transport iz Italije</strong>. Trst, Venecija, Milano, Rim.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Italije &rarr;</span>
-            </a>
-
-             <!-- Skandinavija -->
-             <a href="{{ site.baseurl }}/relacije/svedska/" class="country-box">
-                <div class="country-header">
-                    <span style="font-size: 2rem;">🇸🇪</span>
-                    <h3>Skandinavija</h3>
-                </div>
-                <p style="font-size: 0.9rem; color: #666;"><strong>Transport umrlih iz Skandinavije</strong>. Švedska, Norveška, Danska.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Skandinavije &rarr;</span>
-            </a>
-        </div>
-        
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="{{ site.baseurl }}/relacije/" class="btn-premium">Pogledajte relacije prevoza</a>
-        </div>
-    </div>
-</section>
-
-<!-- WHY CHOOSE US -->
 <section style="padding: 5rem 1rem; background: white;">
     <div class="container">
-        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <h2 style="color: var(--premium-dark); margin-bottom: 2rem;">Zašto izabrati našu službu za prevoz pokojnika?</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
-                <div style="padding: 1.5rem; border: 1px solid #eee;">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Dostupni 24/7</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-grey);">Naš <strong>transport umrlih</strong> dostupan je non-stop.</p>
-                </div>
-                <div style="padding: 1.5rem; border: 1px solid #eee;">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Sva dokumentacija</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-grey);">Pribavljamo sve za <strong>pogrebni prevoz</strong>.</p>
-                </div>
-                <div style="padding: 1.5rem; border: 1px solid #eee;">
-                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Brza realizacija</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-grey);">Organizujemo <strong>prevoz pokojnika</strong> odmah.</p>
-                </div>
+        <h2 style="text-align: center; margin-bottom: 3rem; color: var(--premium-dark);">Kako funkcioniše usluga?</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
+            <div style="padding: 2rem; border: 1px solid #eee; border-radius: 8px;">
+                <h3 style="color: var(--premium-dark);">1. Kontakt</h3>
+                <p>Pozovite nas. Odmah organizujemo <strong>prevoz pokojnika</strong>.</p>
             </div>
-            
-            <div style="margin-top: 3rem; padding: 2rem; background: var(--premium-light); border-radius: 8px; border-left: 4px solid var(--premium-gold);">
-                <h3 style="margin-bottom: 1rem;">Potreban Vam je Prevoz Pokojnika ili Transport Umrlih?</h3>
-                <p style="margin-bottom: 1.5rem;">
-                    Dostupni smo 24 sata dnevno za sve informacije vezane za <strong>pogrebne prevoze</strong>.
-                </p>
-                <a href="tel:{{ site.phone }}" style="font-size: 1.5rem; color: var(--premium-dark); font-weight: 700; text-decoration: none;">
-                    {{ site.phone_display }}
-                </a>
+            <div style="padding: 2rem; border: 1px solid #eee; border-radius: 8px;">
+                <h3 style="color: var(--premium-dark);">2. Dokumenti</h3>
+                <p>Mi završavamo svu papirologiju (Sprovodnice, Leichenpass).</p>
+            </div>
+            <div style="padding: 2rem; border: 1px solid #eee; border-radius: 8px;">
+                <h3 style="color: var(--premium-dark);">3. Prevoz</h3>
+                <p>Siguran transport modernim vozilima do groblja.</p>
             </div>
         </div>
     </div>
 </section>
 
+{% include vozni-park.html %}
+
+<section style="padding: 5rem 1rem; background: var(--premium-light);">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2 style="color: var(--premium-dark);">Sve Relacije Prevoza</h2>
+            <p style="max-width: 800px; margin: 0 auto;">
+                Specijalizovani smo za <strong>međunarodni transport pokojnika</strong> iz svih zemalja EU.
+            </p>
+        </div>
+        <div class="country-grid">
+            <a href="{{ site.baseurl }}/relacije/njemacka/" class="country-box">
+                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;"><span style="font-size: 2rem;">🇩🇪</span><h3>Njemačka</h3></div>
+                <p>Berlin, Minhen, Frankfurt, Štutgart.</p>
+            </a>
+            <a href="{{ site.baseurl }}/relacije/austrija/" class="country-box">
+                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;"><span style="font-size: 2rem;">🇦🇹</span><h3>Austrija</h3></div>
+                <p>Beč, Graz, Salzburg, Linz.</p>
+            </a>
+            <a href="{{ site.baseurl }}/relacije/slovenija/" class="country-box">
+                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;"><span style="font-size: 2rem;">🇸🇮</span><h3>Slovenija</h3></div>
+                <p>Ljubljana, Maribor, Celje, Koper.</p>
+            </a>
+            <a href="{{ site.baseurl }}/relacije/svicarska/" class="country-box">
+                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;"><span style="font-size: 2rem;">🇨🇭</span><h3>Švicarska</h3></div>
+                <p>Zürich, Bern, Basel, Ženeva.</p>
+            </a>
+            <a href="{{ site.baseurl }}/relacije/svedska/" class="country-box">
+                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;"><span style="font-size: 2rem;">🇸🇪</span><h3>Skandinavija</h3></div>
+                <p>Švedska, Norveška, Danska.</p>
+            </a>
+             <a href="{{ site.baseurl }}/relacije/" class="country-box" style="background: var(--premium-dark); color: white;">
+                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;"><span style="font-size: 2rem;">🌍</span><h3 style="color:white;">Sve zemlje</h3></div>
+                <p style="color: #ddd;">Pogledajte kompletnu mapu pokrivenosti.</p>
+            </a>
+        </div>
+    </div>
+</section>
