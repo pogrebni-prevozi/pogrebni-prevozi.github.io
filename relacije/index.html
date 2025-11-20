@@ -1,21 +1,22 @@
 ---
 layout: default
 title: "Međunarodni prevoz preminulih | Sve destinacije"
-meta_description: "Pregled svih država iz kojih vršimo prevoz preminulih. Njemačka, Austrija, Slovenija, Švicarska, Švedska, Francuska, Holandija, Italija i Hrvatska."
+meta_description: "Mapa pokrivenosti prevoza pokojnika. Njemačka, Austrija, Slovenija, Švicarska, Skandinavija i cijela EU. Prevoz u BiH, Srbiju i Hrvatsku."
 permalink: /relacije/
 ---
 
+<!-- MODERN CSS STYLING -->
 <style>
     :root {
-        --primary-dark: #1a252f;    
-        --primary-gold: #c5a059;     
-        --text-body: #546e7a;        
+        --primary-dark: #1a252f;
+        --primary-gold: #c5a059;
+        --text-body: #546e7a;
         --bg-light: #f8f9fa;
         --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
         --card-hover: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
     }
 
-    /* Breadcrumbs Modernization */
+    /* Breadcrumbs */
     .breadcrumbs {
         background: #fff;
         padding: 1rem 0;
@@ -35,7 +36,7 @@ permalink: /relacije/
     }
     
     .hero-minimal h1 {
-        font-family: 'Playfair Display', serif;  
+        font-family: 'Playfair Display', serif;
         font-size: 2.5rem;
         margin-bottom: 1rem;
         font-weight: 400;
@@ -54,10 +55,12 @@ permalink: /relacije/
     /* Grid Layout */
     .country-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 2rem;
-        margin-top: -2rem; /* Overlap effect */
+        margin-top: -2rem;
         padding-bottom: 4rem;
+        position: relative;
+        z-index: 2;
     }
 
     /* Modern Card Design */
@@ -68,12 +71,11 @@ permalink: /relacije/
         box-shadow: var(--card-shadow);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         border: 1px solid rgba(0,0,0,0.03);
-        border-left: 4px solid transparent; /* Ready for hover */
+        border-left: 4px solid transparent;
         display: flex;
         flex-direction: column;
         height: 100%;
-        position: relative;
-        text-decoration: none; /* Removes underline from links */
+        text-decoration: none;
         color: inherit;
     }
 
@@ -92,11 +94,8 @@ permalink: /relacije/
         padding-bottom: 1rem;
     }
 
-    .flag-icon {
-        font-size: 2.2rem;
-        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-    }
-
+    .flag-icon { font-size: 2.2rem; }
+    
     .country-name {
         font-family: 'Playfair Display', serif;
         font-size: 1.5rem;
@@ -124,15 +123,92 @@ permalink: /relacije/
         gap: 0.5rem;
     }
 
-    .arrow-icon {
-        transition: transform 0.3s ease;
-    }
-    
-    .country-card:hover .arrow-icon {
-        transform: translateX(5px);
+    .arrow-icon { transition: transform 0.3s ease; }
+    .country-card:hover .arrow-icon { transform: translateX(5px); }
+
+    /* --- MAP SECTION STYLING --- */
+    .map-section {
+        background: #f8f9fa;
+        padding: 4rem 0;
+        margin-bottom: 4rem;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
     }
 
-    /* Internal Links Cloud */
+    .map-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Map on left, List on right */
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .map-visual {
+        position: relative;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/1024px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        border-radius: 8px;
+        /* Filter to make map look modern/darker/golden if needed */
+        filter: grayscale(100%) opacity(0.6); 
+    }
+
+    /* Pulsating Dots for Cities */
+    .map-dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: var(--primary-gold);
+        border-radius: 50%;
+        z-index: 2;
+    }
+    
+    .map-dot::after {
+        content: '';
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; height: 100%;
+        background-color: var(--primary-gold);
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    @keyframes pulse {
+        0% { width: 10px; height: 10px; opacity: 0.8; }
+        100% { width: 30px; height: 30px; opacity: 0; }
+    }
+
+    .other-countries-list h3 {
+        font-family: 'Playfair Display', serif;
+        color: var(--primary-dark);
+        margin-bottom: 1.5rem;
+    }
+
+    .country-list-ul {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .country-list-ul li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        color: var(--text-body);
+        padding: 0.5rem;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    /* Link Cloud */
     .link-cloud {
         background: #fff;
         border: 1px solid #eee;
@@ -140,7 +216,6 @@ permalink: /relacije/
         padding: 2rem;
         text-align: center;
     }
-    
     .link-cloud a {
         display: inline-block;
         margin: 0.3rem;
@@ -152,42 +227,29 @@ permalink: /relacije/
         font-size: 0.85rem;
         transition: all 0.2s;
     }
-    
-    .link-cloud a:hover {
-        background: var(--primary-dark);
-        color: #fff;
-    }
+    .link-cloud a:hover { background: var(--primary-dark); color: #fff; }
 
-    /* Mobile Sticky Bar */
+    /* Mobile Sticky */
     .mobile-sticky {
         display: none;
         position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        bottom: 0; left: 0; width: 100%;
         background: white;
         box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
         padding: 1rem;
         z-index: 1000;
-        justify-content: space-between;
         gap: 1rem;
     }
-    
     .btn-call {
-        background: var(--primary-dark);
-        color: white;
-        text-align: center;
-        padding: 0.8rem;
-        border-radius: 4px;
-        text-decoration: none;
-        font-weight: bold;
-        flex: 1;
+        background: var(--primary-dark); color: white; text-align: center;
+        padding: 0.8rem; border-radius: 4px; text-decoration: none; font-weight: bold; flex: 1;
     }
 
     @media (max-width: 768px) {
         .mobile-sticky { display: flex; }
-        .container { padding-bottom: 5rem !important; }  
-        .country-grid { margin-top: 0; }
+        .container { padding-bottom: 5rem !important; }
+        .map-container { grid-template-columns: 1fr; } /* Stack map on mobile */
+        .map-visual { height: 250px; }
     }
 </style>
 
@@ -199,150 +261,134 @@ permalink: /relacije/
     </div>
 </div>
 
-<!-- HEADER SECTION -->
+<!-- HERO SECTION -->
 <section class="hero-minimal">
     <div class="container">
         <h1>Dostojanstven povratak kući</h1>
         <p>
-            Profesionalna repatrijacija i prevoz preminulih osoba iz Evropske Unije.
-            <br>Odaberite državu za detalje o proceduri, dokumentaciji i troškovima.
+            Profesionalna repatrijacija i prevoz preminulih osoba iz cijele Evrope.
+            <br>Odaberite državu za detalje o proceduri i dokumentaciji.
         </p>
     </div>
 </section>
 
 <main class="container">
     
-    <!-- COUNTRY GRID -->
+    <!-- CARD GRID -->
     <div class="country-grid">
         
         <!-- 1. NJEMAČKA -->
         <a href="{{ site.baseurl }}/relacije/njemacka/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇩🇪</span>
-                <h2 class="country-name">Njemačka</h2>
-            </div>
-            <div class="card-body">
-                Svakodnevni polasci iz svih pokrajina (Bayern, NRW, Berlin). Direktna saradnja sa konzulatima u Minhenu i Frankfurtu za brzo dobijanje sprovodnice.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇩🇪</span><h2 class="country-name">Njemačka</h2></div>
+            <div class="card-body">Svakodnevni polasci iz svih pokrajina. Direktna saradnja sa konzulatima u Minhenu i Frankfurtu.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
         <!-- 2. AUSTRIJA -->
         <a href="{{ site.baseurl }}/relacije/austrija/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇦🇹</span>
-                <h2 class="country-name">Austrija</h2>
-            </div>
-            <div class="card-body">
-                Kompletna logistika iz Beča, Graza, Salzburga i Linza. Rješavanje sanitarne dokumentacije i direktan prevoz bez čekanja.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇦🇹</span><h2 class="country-name">Austrija</h2></div>
+            <div class="card-body">Kompletna logistika iz Beča, Graza, Salzburga i Linza. Rješavanje sanitarne dokumentacije.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
         <!-- 3. SLOVENIJA -->
         <a href="{{ site.baseurl }}/relacije/slovenija/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇸🇮</span>
-                <h2 class="country-name">Slovenija</h2>
-            </div>
-            <div class="card-body">
-                <strong>Domaći teren.</strong> Sjedište firme u Ljubljani garantuje najbržu reakciju za prevoz iz bilo kojeg dijela Slovenije prema BiH i Srbiji.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇸🇮</span><h2 class="country-name">Slovenija</h2></div>
+            <div class="card-body"><strong>Domaći teren.</strong> Najbrža reakcija za prevoz iz bilo kojeg dijela Slovenije.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
         <!-- 4. ŠVICARSKA -->
         <a href="{{ site.baseurl }}/relacije/svicarska/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇨🇭</span>
-                <h2 class="country-name">Švicarska</h2>
-            </div>
-            <div class="card-body">
-                Stručno poznavanje kantonalnih propisa (Zürich, Bern, Basel, Ženeva). Rješavamo carinsku proceduru i pečatenje kovčega.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇨🇭</span><h2 class="country-name">Švicarska</h2></div>
+            <div class="card-body">Poznavanje kantonalnih propisa (Zürich, Bern, Basel). Rješavamo carinsku proceduru.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
         <!-- 5. ITALIJA -->
         <a href="{{ site.baseurl }}/relacije/italija/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇮🇹</span>
-                <h2 class="country-name">Italija</h2>
-            </div>
-            <div class="card-body">
-                Prevoz iz sjeverne Italije (Trst, Venecija, Milano) i južnih regija. Saradnja sa italijanskim sanitarnim inspektorima.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇮🇹</span><h2 class="country-name">Italija</h2></div>
+            <div class="card-body">Prevoz iz sjeverne Italije (Trst, Venecija, Milano) i južnih regija.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
         <!-- 6. ŠVEDSKA -->
         <a href="{{ site.baseurl }}/relacije/svedska/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇸🇪</span>
-                <h2 class="country-name">Švedska</h2>
-            </div>
-            <div class="card-body">
-                Specijalizovani transport iz Skandinavije. Organizacija trajektnog prelaza i kompletna papirologija u ambasadi.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇸🇪</span><h2 class="country-name">Švedska</h2></div>
+            <div class="card-body">Specijalizovani transport iz Skandinavije. Organizacija trajektnog prelaza.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
         <!-- 7. FRANCUSKA -->
         <a href="{{ site.baseurl }}/relacije/francuska/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇫🇷</span>
-                <h2 class="country-name">Francuska</h2>
-            </div>
-            <div class="card-body">
-                Prevoz iz Pariza, Lyona i Marseillea. Poznavanje jezika i administrativnih zahtjeva francuskih opština.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇫🇷</span><h2 class="country-name">Francuska</h2></div>
+            <div class="card-body">Prevoz iz Pariza, Lyona i Marseillea. Poznavanje administrativnih zahtjeva.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
         <!-- 8. HOLANDIJA -->
         <a href="{{ site.baseurl }}/relacije/holandija/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇳🇱</span>
-                <h2 class="country-name">Holandija</h2>
-            </div>
-            <div class="card-body">
-                Transport iz Amsterdama, Rotterdama i regije Beneluxa. Brza i efikasna organizacija Leichenpass-a.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇳🇱</span><h2 class="country-name">Holandija</h2></div>
+            <div class="card-body">Transport iz Amsterdama, Rotterdama i Beneluxa. Efikasna organizacija Leichenpass-a.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
          <!-- 9. HRVATSKA -->
          <a href="{{ site.baseurl }}/relacije/hrvatska/" class="country-card">
-            <div class="card-header">
-                <span class="flag-icon">🇭🇷</span>
-                <h2 class="country-name">Hrvatska</h2>
-            </div>
-            <div class="card-body">
-                Prevoz iz Zagreba, Dalmacije i Slavonije. Tranzit ili prevoz do konačnog odredišta u regionu.
-            </div>
-            <div class="card-footer">
-                Procedura i detalji <span class="arrow-icon">→</span>
-            </div>
+            <div class="card-header"><span class="flag-icon">🇭🇷</span><h2 class="country-name">Hrvatska</h2></div>
+            <div class="card-body">Prevoz iz Zagreba, Dalmacije i Slavonije. Tranzit ili prevoz do konačnog odredišta.</div>
+            <div class="card-footer">Procedura i detalji <span class="arrow-icon">→</span></div>
         </a>
 
     </div>
 
+</main>
+
+<!-- MAP & COVERAGE SECTION (NOVI DIO) -->
+<section class="map-section">
+    <div class="container">
+        <div class="map-container">
+            <!-- Visual Map -->
+            <div class="map-visual">
+                <!-- Pulsating Cities (Approximated positions using %) -->
+                <div class="map-dot" style="top: 45%; left: 48%;" title="München"></div> <!-- Munich -->
+                <div class="map-dot" style="top: 35%; left: 52%;" title="Berlin"></div> <!-- Berlin -->
+                <div class="map-dot" style="top: 50%; left: 55%;" title="Beč"></div> <!-- Vienna -->
+                <div class="map-dot" style="top: 52%; left: 42%;" title="Zürich"></div> <!-- Zurich -->
+                <div class="map-dot" style="top: 30%; left: 40%;" title="Amsterdam"></div> <!-- Amsterdam -->
+                <div class="map-dot" style="top: 20%; left: 55%;" title="Stockholm"></div> <!-- Stockholm -->
+                <div class="map-dot" style="top: 45%; left: 30%;" title="Pariz"></div> <!-- Paris -->
+                <div class="map-dot" style="top: 60%; left: 45%;" title="Milano"></div> <!-- Milan -->
+                <div class="map-dot" style="top: 62%; left: 58%;" title="Ljubljana" style="background: #fff; border: 2px solid var(--primary-gold);"></div> <!-- LJUBLJANA -->
+            </div>
+
+            <!-- List of Other Countries -->
+            <div class="other-countries-list">
+                <h3>Pokrivamo cijelu Evropu</h3>
+                <p style="color: #666; margin-bottom: 2rem;">
+                    Osim gore navedenih država, naše usluge prevoza preminulih dostupne su i u sljedećim zemljama. 
+                    Posjedujemo licence za međunarodni transport u cijeloj EU.
+                </p>
+                <ul class="country-list-ul">
+                    <li>🇧🇪 Belgija</li>
+                    <li>🇩🇰 Danska</li>
+                    <li>🇱🇺 Luksemburg</li>
+                    <li>🇨🇿 Češka Republika</li>
+                    <li>🇸🇰 Slovačka</li>
+                    <li>🇭🇺 Mađarska</li>
+                    <li>🇵🇱 Poljska</li>
+                    <li>🇪🇸 Španija</li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                     <a href="{{ site.baseurl }}/kontakt/" style="text-decoration: underline; color: var(--primary-gold); font-weight: bold;">Kontaktirajte nas za ostale relacije</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container" style="margin-bottom: 4rem;">
+    <!-- SEO Links -->
     <div class="link-cloud">
         <h3 style="font-size: 1rem; color: #999; font-weight: 400; margin-bottom: 1rem;">Često tražene relacije</h3>
         <div>
@@ -351,9 +397,9 @@ permalink: /relacije/
             {% endfor %}
         </div>
     </div>
+</div>
 
-</main>
-
+<!-- MOBILE STICKY -->
 <div class="mobile-sticky">
     <a href="tel:{{ site.phone }}" class="btn-call">📞 Pozovite Odmah</a>
     <a href="https://wa.me/{{ site.whatsapp }}" class="btn-call" style="background: #25D366;">💬 WhatsApp</a>
