@@ -6,8 +6,8 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
 
 <style>
     :root {
-        --premium-dark: #1a252f;   /* Antracit plava */
-        --premium-gold: #c5a059;   /* Mat zlatna */
+        --premium-dark: #1a252f;
+        --premium-gold: #c5a059;
         --premium-light: #f8f9fa;
         --text-grey: #546e7a;
     }
@@ -17,27 +17,29 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
         color: #333;
         line-height: 1.6;
     }
-    h1, h2, h3, .hero-subtitle {
+    h1, h2, h3 {
         font-family: 'Playfair Display', serif;
     }
 
-    /* HERO SECTION */
     .hero-premium {
-        background: linear-gradient(rgba(26, 37, 47, 0.9), rgba(26, 37, 47, 0.8)), url('{{ site.baseurl }}/assets/vozila/v1.jpg');
+        background: linear-gradient(rgba(26, 37, 47, 0.92), rgba(26, 37, 47, 0.85)), url('{{ site.baseurl }}/assets/vozila/v1.jpg');
         background-size: cover;
         background-position: center;
         color: white;
-        padding: 5rem 1rem;
+        padding: 6rem 1rem; 
         text-align: center;
         border-bottom: 4px solid var(--premium-gold);
     }
 
     .hero-premium h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem; 
         font-weight: 400;
         margin-bottom: 1.5rem;
-        line-height: 1.3;
+        line-height: 1.4;
         text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-premium strong {
@@ -47,14 +49,15 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
 
     .hero-subtitle {
         font-family: 'Inter', sans-serif;
-        font-size: 1.1rem;
-        color: rgba(255,255,255,0.9);
-        max-width: 700px;
+        font-size: 1.15rem;
+        color: rgba(255,255,255,0.95);
+        max-width: 800px;
         margin: 0 auto 2.5rem;
         font-weight: 300;
+        line-height: 1.8;
     }
 
-    /* Feature Badges (Trust Indicators) */
+    /* Trust Badges */
     .trust-badges {
         display: flex;
         justify-content: center;
@@ -73,7 +76,7 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
         gap: 0.5rem;
     }
 
-    /* CTA Buttons */
+    /* Buttons */
     .btn-premium {
         display: inline-block;
         padding: 1rem 2rem;
@@ -90,23 +93,12 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
         letter-spacing: 1px;
         font-size: 0.9rem;
     }
-    .btn-premium:hover {
-        background: #b08d4a;
-    }
-    .btn-outline {
-        background: transparent;
-        border: 1px solid white;
-    }
-    .btn-outline:hover {
-        background: white;
-        color: var(--premium-dark);
-    }
+    .btn-premium:hover { background: #b08d4a; }
+    .btn-outline { background: transparent; border: 1px solid white; }
+    .btn-outline:hover { background: white; color: var(--premium-dark); }
 
-    /* PROCESS STEPS (Clean) */
-    .process-premium {
-        padding: 5rem 1rem;
-        background: white;
-    }
+    /* PROCESS SECTION */
+    .process-premium { padding: 5rem 1rem; background: white; }
     .steps-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -132,15 +124,11 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
         color: var(--premium-gold);
         opacity: 0.3;
         font-weight: 700;
-        margin-bottom: -1rem;
         display: block;
     }
 
-    /* COUNTRY LIST (Elegant) */
-    .country-list-section {
-        background: var(--premium-light);
-        padding: 5rem 1rem;
-    }
+    /* COUNTRY LIST */
+    .country-list-section { background: var(--premium-light); padding: 5rem 1rem; }
     .country-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -151,7 +139,7 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
     .country-box {
         background: white;
         padding: 2rem;
-        border-left: 4px solid var(--premium-dark); /* Elegant border */
+        border-left: 4px solid var(--premium-dark);
         box-shadow: 0 2px 10px rgba(0,0,0,0.03);
         transition: all 0.3s;
         text-decoration: none;
@@ -161,34 +149,28 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
         border-left-color: var(--premium-gold);
         transform: translateX(5px);
     }
-    .country-header {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
+    .country-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
     .country-header h3 { margin: 0; color: var(--premium-dark); }
     
-    /* Mobile Responsive */
     @media (max-width: 768px) {
-        .hero-premium h1 { font-size: 1.8rem; }
-        .trust-badges { flex-direction: column; gap: 0.5rem; align-items: center; }
-        .badge-item { width: 100%; justify-content: center; }
+        .hero-premium h1 { font-size: 1.6rem; }
     }
 </style>
 
-<!-- HERO SECTION -->
 <section class="hero-premium">
     <div class="container">
-        <h1>Međunarodni prevoz preminulih<br><strong>Edit Aljić</strong></h1>
+        <h1>Međunarodni Prevoz Pokojnika i<br>Transport Umrlih iz Inostranstva</h1>
+        
         <p class="hero-subtitle">
-            Dostojanstven povratak u domovinu. Organizujemo kompletan prevoz umrlih iz EU za BiH, Srbiju, Crnu Goru i Hrvatsku.
+            Profesionalna, dostojanstvena i brza usluga <strong>prevoza pokojnika</strong>, 
+            <strong>transporta umrlih iz inostranstva</strong> i <strong>pogrebnih prevoza</strong> 
+            iz EU u BiH, Srbiju i Crnu Goru, kao i <strong>sve druge države Balkana</strong>.
         </p>
 
         <div class="trust-badges">
             <div class="badge-item">🕒 Dostupni 24/7</div>
-            <div class="badge-item">📄 Kompletna dokumentacija</div>
-            <div class="badge-item">🇪🇺 Licencirani za EU</div>
+            <div class="badge-item">📄 Sva dokumentacija</div>
+            <div class="badge-item">🇪🇺 15+ godina iskustva</div>
         </div>
 
         <div>
@@ -201,24 +183,32 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
 <!-- PROCESS SECTION -->
 <section class="process-premium">
     <div class="container">
-        <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; color: var(--premium-dark);">Procedura prevoza</h2>
+        <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; color: var(--premium-dark);">
+            Kako funkcioniše naša usluga prevoza umrlih
+        </h2>
         
         <div class="steps-grid">
             <div class="step-card">
-                <span class="step-number">01</span>
-                <h3 style="color: var(--premium-dark); margin-top: 1rem;">Prvi Kontakt</h3>
-                <p style="color: var(--text-grey);">Pozovite nas na dežurni telefon. Dostupni smo 24 sata dnevno za konsultacije.</p>
+                <span class="step-number">1</span>
+                <h3 style="color: var(--premium-dark); margin-top: 1rem;">Kontakt</h3>
+                <p style="color: var(--text-grey);">Pozovite nas 24/7 za <strong>prevoz pokojnika</strong>. Odmah organizujemo transport.</p>
             </div>
             <div class="step-card">
-                <span class="step-number">02</span>
+                <span class="step-number">2</span>
                 <h3 style="color: var(--premium-dark); margin-top: 1rem;">Dokumentacija</h3>
-                <p style="color: var(--text-grey);">Mi preuzimamo obavezu pribavljanja sprovodnica i dozvola u konzulatima.</p>
+                <p style="color: var(--text-grey);">Mi se brinemo o svim dokumentima za <strong>pogrebni prevoz</strong> (Leichenpass, sprovodnice).</p>
             </div>
             <div class="step-card">
-                <span class="step-number">03</span>
+                <span class="step-number">3</span>
                 <h3 style="color: var(--premium-dark); margin-top: 1rem;">Transport</h3>
-                <p style="color: var(--text-grey);">Dostojanstven prevoz specijalnim pogrebnim vozilima direktno do groblja.</p>
+                <p style="color: var(--text-grey);">Profesionalan <strong>transport umrlih</strong> sa iskusnim vozačima do odredišta.</p>
             </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="{{ site.baseurl }}/procedura/" style="color: var(--premium-gold); font-weight: 600; text-decoration: none; font-size: 1.1rem;">
+                Detaljnije o proceduri &rarr;
+            </a>
         </div>
     </div>
 </section>
@@ -226,13 +216,17 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
 <section style="padding: 4rem 0; border-top: 1px solid #eee;">
     {% include vozni-park.html %}
 </section>
-
-<!-- DESTINATIONS SECTION -->
 <section class="country-list-section">
     <div class="container">
         <div style="text-align: center; margin-bottom: 3rem;">
-            <h2 style="color: var(--premium-dark);">Relacije prevoza</h2>
-            <p style="color: var(--text-grey);">Pokrivamo cjelokupnu teritoriju Evropske Unije</p>
+            <h2 style="color: var(--premium-dark); margin-bottom: 1.5rem;">
+                Prevoz pokojnika i transport umrlih - Sve relacije
+            </h2>
+            <p style="color: var(--text-grey); max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+                Naš <strong>prevoz pokojnika</strong>, <strong>transport umrlih iz inostranstva</strong> i <strong>pogrebni prevozi</strong> 
+                pokrivaju sve evropske zemlje i destinacije na Balkanu. Specijalizovani smo za 
+                <strong>međunarodni transport pokojnika</strong> i <strong>prevoz umrlih iz inostranstva</strong> sa kompletnom dokumentacijom.
+            </p>
         </div>
 
         <div class="country-grid">
@@ -242,8 +236,8 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
                     <span style="font-size: 2rem;">🇩🇪</span>
                     <h3>Njemačka</h3>
                 </div>
-                <p style="font-size: 0.9rem; color: #666;">Svakodnevni polasci iz Minhena, Berlina, Frankfurta, Štutgarta...</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Detalji transporta &rarr;</span>
+                <p style="font-size: 0.9rem; color: #666;"><strong>Prevoz pokojnika iz Njemačke</strong>. Berlin, Minhen, Frankfurt, Štutgart.</p>
+                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Njemačke &rarr;</span>
             </a>
 
             <!-- Austrija -->
@@ -252,8 +246,8 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
                     <span style="font-size: 2rem;">🇦🇹</span>
                     <h3>Austrija</h3>
                 </div>
-                <p style="font-size: 0.9rem; color: #666;">Beč, Graz, Salzburg, Linz. Brza realizacija dokumentacije.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Detalji transporta &rarr;</span>
+                <p style="font-size: 0.9rem; color: #666;"><strong>Pogrebni prevozi iz Austrije</strong>. Beč, Graz, Salzburg, Linz.</p>
+                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Austrije &rarr;</span>
             </a>
 
             <!-- Slovenija -->
@@ -262,8 +256,8 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
                     <span style="font-size: 2rem;">🇸🇮</span>
                     <h3>Slovenija</h3>
                 </div>
-                <p style="font-size: 0.9rem; color: #666;">Domaći teren. Najbrži dolazak na adresu u Ljubljani, Mariboru, Celju.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Detalji transporta &rarr;</span>
+                <p style="font-size: 0.9rem; color: #666;"><strong>Transport pokojnika iz Slovenije</strong>. Ljubljana, Maribor, Celje, Koper.</p>
+                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Slovenije &rarr;</span>
             </a>
 
             <!-- Švicarska -->
@@ -272,19 +266,33 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
                     <span style="font-size: 2rem;">🇨🇭</span>
                     <h3>Švicarska</h3>
                 </div>
-                <p style="font-size: 0.9rem; color: #666;">Zürich, Bern, Basel. Poznavanje carinskih procedura.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Detalji transporta &rarr;</span>
+                <p style="font-size: 0.9rem; color: #666;"><strong>Prevoz pokojnika iz Švicarske</strong>. Zürich, Bern, Basel, Ženeva.</p>
+                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Švicarske &rarr;</span>
+            </a>
+            
+            <!-- Italija -->
+            <a href="{{ site.baseurl }}/relacije/italija/" class="country-box">
+                <div class="country-header">
+                    <span style="font-size: 2rem;">🇮🇹</span>
+                    <h3>Italija</h3>
+                </div>
+                <p style="font-size: 0.9rem; color: #666;"><strong>Pogrebni transport iz Italije</strong>. Trst, Venecija, Milano, Rim.</p>
+                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Italije &rarr;</span>
             </a>
 
-             <!-- Ostale -->
-             <a href="{{ site.baseurl }}/relacije/" class="country-box" style="background: var(--premium-dark); color: white;">
+             <!-- Skandinavija -->
+             <a href="{{ site.baseurl }}/relacije/svedska/" class="country-box">
                 <div class="country-header">
-                    <span style="font-size: 2rem;">🌍</span>
-                    <h3 style="color: white;">Sve Relacije</h3>
+                    <span style="font-size: 2rem;">🇸🇪</span>
+                    <h3>Skandinavija</h3>
                 </div>
-                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">Francuska, Italija, Švedska, Holandija i ostale zemlje.</p>
-                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Pogledajte mapu &rarr;</span>
+                <p style="font-size: 0.9rem; color: #666;"><strong>Transport umrlih iz Skandinavije</strong>. Švedska, Norveška, Danska.</p>
+                <span style="color: var(--premium-gold); font-size: 0.9rem; font-weight: 600;">Transport iz Skandinavije &rarr;</span>
             </a>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="{{ site.baseurl }}/relacije/" class="btn-premium">Pogledajte sve relacije prevoza</a>
         </div>
     </div>
 </section>
@@ -292,22 +300,29 @@ meta_description: "Profesionalan prevoz pokojnika, transport umrlih iz inostrans
 <!-- WHY CHOOSE US -->
 <section style="padding: 5rem 1rem; background: white;">
     <div class="container">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="color: var(--premium-dark); margin-bottom: 2rem;">Pouzdanost u teškim trenucima</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; text-align: left;">
-                <div style="border-left: 3px solid var(--premium-gold); padding-left: 1rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;">15+ Godina iskustva</h4>
-                    <p style="font-size: 0.9rem; margin: 0; color: var(--text-grey);">Dugogodišnje iskustvo u međunarodnom transportu.</p>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="color: var(--premium-dark); margin-bottom: 2rem;">Zašto izabrati našu službu za prevoz pokojnika?</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                <div style="padding: 1.5rem; border: 1px solid #eee;">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Dostupni 24/7</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-grey);">Naš <strong>transport umrlih</strong> dostupan je non-stop.</p>
                 </div>
-                <div style="border-left: 3px solid var(--premium-gold); padding-left: 1rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;">Transparentne cijene</h4>
-                    <p style="font-size: 0.9rem; margin: 0; color: var(--text-grey);">Bez skrivenih troškova. Dogovor se poštuje.</p>
+                <div style="padding: 1.5rem; border: 1px solid #eee;">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Sva dokumentacija</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-grey);">Pribavljamo sve za <strong>pogrebni prevoz</strong>.</p>
+                </div>
+                <div style="padding: 1.5rem; border: 1px solid #eee;">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Brza realizacija</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-grey);">Organizujemo <strong>prevoz pokojnika</strong> odmah.</p>
                 </div>
             </div>
             
-            <div style="margin-top: 3rem; padding: 2rem; background: var(--premium-light); border-radius: 8px;">
-                <h3 style="margin-bottom: 1rem;">Potrebna Vam je hitna informacija?</h3>
-                <p style="margin-bottom: 1.5rem;">Naš tim je dostupan upravo sada.</p>
+            <div style="margin-top: 3rem; padding: 2rem; background: var(--premium-light); border-radius: 8px; border-left: 4px solid var(--premium-gold);">
+                <h3 style="margin-bottom: 1rem;">Potreban Vam je Prevoz Pokojnika ili Transport Umrlih?</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Dostupni smo 24 sata dnevno za sve informacije vezane za <strong>pogrebne prevoze</strong>.
+                </p>
                 <a href="tel:{{ site.phone }}" style="font-size: 1.5rem; color: var(--premium-dark); font-weight: 700; text-decoration: none;">
                     {{ site.phone_display }}
                 </a>
