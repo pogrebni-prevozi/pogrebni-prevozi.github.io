@@ -3,53 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
+    
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    
-    {% if page.canonical_url %}
-    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.canonical_url }}">
-    {% else %}
+    <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-    {% endif %}
-    
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description"
-        content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="{{ site.locale }}">
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon/favicon.ico">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WMZFXTWKP"></script>
+    
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-7WMZFXTWKP');
+      gtag('config', '{{ site.google_analytics }}');
     </script>
+
+    <style>
+        :root {
+            --premium-dark: #1a252f;
+            --premium-gold: #c5a059;
+            --premium-light: #f8f9fa;
+            --text-grey: #546e7a;
+        }
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; margin: 0; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        a { color: var(--premium-dark); text-decoration: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        
+        /* Mobile Sticky Button */
+        .mobile-cta-sticky {
+            display: none; position: fixed; bottom: 0; left: 0; width: 100%;
+            background: #fff; box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            padding: 10px 15px; z-index: 9999; box-sizing: border-box; gap: 10px;
+        }
+        .sticky-btn {
+            flex: 1; text-align: center; padding: 12px; border-radius: 4px;
+            font-weight: 600; color: #fff !important; font-family: 'Inter', sans-serif;
+        }
+        @media (max-width: 768px) {
+            .mobile-cta-sticky { display: flex; }
+            footer { padding-bottom: 80px; } 
+        }
+    </style>
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FuneralHome",
-      "name": "Pogrebni prevozi Edit Aljić",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
-      "@id": "{{ site.url }}{{ site.baseurl }}",
-      "url": "{{ site.url }}{{ site.baseurl }}",
+      "name": "{{ site.title }}",
+      "image": "{{ site.url }}/assets/images/logo.png",
+      "@id": "{{ site.url }}",
+      "url": "{{ site.url }}",
       "telephone": "{{ site.phone }}",
-      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Obrije 13a",
@@ -64,57 +73,23 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "00:00",
         "closes": "23:59"
       }
     }
     </script>
-   
+    
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
 <body>
     {% include header.html %}
-    
     {{ content }}
-    
     {% include footer.html %}
-
-    <style>
-        .mobile-cta-sticky {
-            display: none;
-            position: fixed;
-            bottom: 0; left: 0; width: 100%;
-            background: #fff;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            padding: 10px 15px;
-            z-index: 9999;
-            justify-content: space-between;
-            gap: 10px;
-        }
-        .sticky-btn {
-            flex: 1;
-            text-align: center;
-            padding: 12px;
-            border-radius: 4px;
-            font-weight: 600;
-            text-decoration: none;
-            font-family: 'Inter', sans-serif;
-        }
-        .btn-call { background: #1a252f; color: #fff; }
-        .btn-wa { background: #25D366; color: #fff; }
-        
-        @media (max-width: 768px) {
-            .mobile-cta-sticky { display: flex; }
-            footer { padding-bottom: 70px; }
-        }
-    </style>
+    
     <div class="mobile-cta-sticky">
-        <a href="tel:{{ site.phone }}" class="sticky-btn btn-call">📞 Pozovi</a>
-        <a href="https://wa.me/{{ site.whatsapp }}" class="sticky-btn btn-wa">💬 WhatsApp</a>
+        <a href="tel:{{ site.phone }}" class="sticky-btn" style="background: #1a252f;">📞 Pozovi</a>
+        <a href="https://wa.me/{{ site.whatsapp }}" class="sticky-btn" style="background: #25D366;">💬 WhatsApp</a>
     </div>
-
 </body>
 </html>
