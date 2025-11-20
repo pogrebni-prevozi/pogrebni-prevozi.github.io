@@ -13,7 +13,6 @@
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
     {% endif %}
     
-   
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description"
         content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
@@ -22,13 +21,17 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ site.locale }}">
     
-    
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon/favicon.ico">
     
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WMZFXTWKP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -37,12 +40,81 @@
       gtag('config', 'G-7WMZFXTWKP');
     </script>
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FuneralHome",
+      "name": "Pogrebni prevozi Edit Aljić",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
+      "@id": "{{ site.url }}{{ site.baseurl }}",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "telephone": "{{ site.phone }}",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Obrije 13a",
+        "addressLocality": "Ljubljana",
+        "postalCode": "1000",
+        "addressCountry": "SI"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.0569,
+        "longitude": 14.5058
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
    
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
 <body>
     {% include header.html %}
+    
     {{ content }}
+    
     {% include footer.html %}
+
+    <style>
+        .mobile-cta-sticky {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; width: 100%;
+            background: #fff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            padding: 10px 15px;
+            z-index: 9999;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .sticky-btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-call { background: #1a252f; color: #fff; }
+        .btn-wa { background: #25D366; color: #fff; }
+        
+        @media (max-width: 768px) {
+            .mobile-cta-sticky { display: flex; }
+            footer { padding-bottom: 70px; }
+        }
+    </style>
+    <div class="mobile-cta-sticky">
+        <a href="tel:{{ site.phone }}" class="sticky-btn btn-call">📞 Pozovi</a>
+        <a href="https://wa.me/{{ site.whatsapp }}" class="sticky-btn btn-wa">💬 WhatsApp</a>
+    </div>
+
 </body>
 </html>
