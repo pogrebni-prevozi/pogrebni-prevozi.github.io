@@ -1,3 +1,11 @@
+---
+layout: null
+permalink: /robots.txt
+---
+{% if site.url contains "vercel.app" and site.url != "https://pogrebni-prevoz.vercel.app" %}
+User-agent: *
+Disallow: /
+{% else %}
 User-agent: *
 Allow: /
 Disallow: /cgi-bin/
@@ -5,4 +13,5 @@ Disallow: /temp/
 Disallow: /admin/
 Crawl-delay: 5
 
-Sitemap: https://pogrebni-prevozi.github.io/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
+{% endif %}
