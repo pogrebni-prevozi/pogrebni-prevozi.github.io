@@ -2,10 +2,12 @@
 layout: null
 permalink: /robots.txt
 ---
-{% if site.url contains "vercel.app" and site.url != "https://pogrebni-prevoz.vercel.app" %}
-User-agent: *
-Disallow: /
-{% else %}
+{% assign is_production = false %}
+{% if site.url == "https://pogrebni-prevozi.github.io" or site.url == "https://pogrebni-prevoz.vercel.app" %}
+  {% assign is_production = true %}
+{% endif %}
+
+{% if is_production %}
 User-agent: *
 Allow: /
 Disallow: /cgi-bin/
@@ -14,4 +16,7 @@ Disallow: /admin/
 Crawl-delay: 5
 
 Sitemap: {{ site.url }}/sitemap.xml
+{% else %}
+User-agent: *
+Disallow: /
 {% endif %}
